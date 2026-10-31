@@ -1,61 +1,64 @@
-# DSH Mobile · 安卓版 DeepSeek Harness
+# DeepSeek Harness for Android
 
-把电脑上的 DeepSeek Harness 装进手机。会话、模型、工具调用、审批、工作区、终端，一个都不少。
+[![Release](https://img.shields.io/github/v/release/Chanray-May9/deepseek-harness-for-android?style=flat-square)](https://github.com/Chanray-May9/deepseek-harness-for-android/releases)
+[![Stars](https://img.shields.io/github/stars/Chanray-May9/deepseek-harness-for-android?style=flat-square)](https://github.com/Chanray-May9/deepseek-harness-for-android/stargazers)
+[![Forks](https://img.shields.io/github/forks/Chanray-May9/deepseek-harness-for-android?style=flat-square)](https://github.com/Chanray-May9/deepseek-harness-for-android/network)
+[![Issues](https://img.shields.io/github/issues/Chanray-May9/deepseek-harness-for-android?style=flat-square)](https://github.com/Chanray-May9/deepseek-harness-for-android/issues)
+[![Last commit](https://img.shields.io/github/last-commit/Chanray-May9/deepseek-harness-for-android?style=flat-square)](https://github.com/Chanray-May9/deepseek-harness-for-android/commits)
+[![Platform](https://img.shields.io/badge/platform-Android%208.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](#要求)
+[![ABI](https://img.shields.io/badge/ABI-arm64--v8a%20%7C%20x86__64-4B8BBE?style=flat-square)](#要求)
+
+在手机上直接跑完整的 DeepSeek Harness，不连电脑、不需要服务器。
 
 ## 它是什么
 
-DSH Mobile 是 DeepSeek Harness 的安卓客户端。电脑上的 Harness 继续跑它该跑的活，手机负责看和发号施令：
+一个安卓应用，把 DeepSeek Harness 的完整运行环境内置进 APK。装好之后点图标就能用，所有处理都在手机本地完成。
 
-- **原生界面**：会话列表、流式回复、工具卡片、审批弹窗、模型切换，全部为触屏重做，单手可用。
-- **全量界面**：一键切到与电脑端完全一致的完整界面，插件市场、设置、轨迹、子智能体，手机上直接点。
-- 两种界面共用同一条连接，随时切换，进度不丢。
+它和网页版是同一套界面、同一套功能，只针对手机做了排版和操作上的调整。
 
-## 三步连上电脑
+## 装完能用什么
 
-1. 电脑打开 DeepSeek Harness，在「设置 → 远程访问」里放行手机（同一 Wi-Fi 或内网穿透地址）。
-2. 手机打开 DSH Mobile，扫码电脑上给出的连接二维码。
-3. 连上即用。
-
-也可以直接粘贴电脑上那条带口令的链接，或者手动填地址 + 口令。
-
-## 手机上能干什么
-
-| 场景 | 做法 |
+| 能力 | 说明 |
 | --- | --- |
-| 出门在外看长任务 | 前台保活 + 完成通知，锁屏也知道跑完没有 |
-| 把网页/文章丢给 Harness | 系统分享菜单里选「发给 DSH」 |
-| 临时改一句指令 | 会话内直接追加，不必回电脑 |
-| 在沙发上批工具调用 | 审批卡片上滑通过、下滑拒绝 |
-| 换模型试效果 | 输入框上方一点即切 |
-| 翻工作区文件 | 内置文件浏览与预览，长按复制路径 |
-| 语音交代任务 | 输入框麦克风，说完直接发 |
-
-## 界面
-
-- 会话：按工作区分组，支持搜索、置顶、重命名、归档
-- 聊天：Markdown、代码高亮、折叠的思考过程、可展开的工具结果、图片附件
-- 抽屉：工作区、子智能体、定时任务、后台作业、目标
-- 设置：连接管理、模型、权限预设、主题（跟随系统/深色/浅色）、语言（简体中文/English）
+| 对话 | 流式回复、Markdown、代码高亮、思考过程折叠 |
+| 模型 | 输入框上方直接切换模型与推理等级 |
+| 工具调用 | 卡片式展示，结果可展开 |
+| 工作区 | 会话按工作区分组，可切换、可管理 |
+| 终端 | 内置命令行环境，可直接执行命令、装软件 |
+| 文件 | 相机、相册、文件作为附件发送 |
+| 设置 | 主题、语言、权限、工作区、插件 |
 
 ## 安装
 
-1. 手机打开「设置 → 允许安装未知来源应用」。
-2. 安装 `dsh-android/android/app/build/outputs/apk/debug/app-debug.apk`。
-3. 首次启动按引导连接电脑。
+1. 到 [Releases](https://github.com/Chanray-May9/deepseek-harness-for-android/releases) 下载最新 APK。
+2. 手机允许安装未知来源应用。
+3. 安装后点图标打开。
 
-需要 Android 8.0 及以上。
+首次冷启动需要初始化运行环境，等待界面出现即可，之后启动会快很多。
 
-## 离线与安全
+## 要求
 
-- 连接口令只保存在本机，可用系统生物识别加锁。
-- 断网时保留最近会话的只读缓存，恢复后自动续传。
-- 不在手机上保存模型密钥，一切推理都在电脑侧完成。
+- Android 8.0（API 26）及以上
+- 处理器：`arm64-v8a` 或 `x86_64`
+- 存储：预留 2 GB 以上
+- 安装包已包含两个架构，同一个文件通用
 
-## 目录
+## 界面
+
+- 欢迎页：鲸鱼标志 + 一句开场，输入框在底部
+- 对话页：标题栏、消息流、底部输入框
+- 侧栏：新建会话、插件、自动化任务、工作区与会话列表
+- 设置：模型、权限、主题、语言、关于
+
+## 从源码构建
 
 ```
-dsh-android/
-├── android/       安卓工程（Gradle）
-├── docs/          协议与设计文档
-└── tools/         本地联调用的模拟 Host
+tools/rebuild-apk.ps1        # 编译并打包 APK
+tools/sync-shell.cjs         # 把界面改动热推到已连接的设备
 ```
+
+运行环境所需的归档不在仓库内（体积过大），由 `tools/build-*.cjs` 生成。
+
+## 致谢
+
+界面与运行时来自 DeepSeek Harness。
