@@ -59,16 +59,10 @@ DeepSeek Harness 是一个把大模型能力、文件操作、命令执行、任
 
 ## 界面
 
-<table>
-<tr>
-<td width="50%"><img src="docs/screenshots/home.png" width="100%" alt="欢迎页" /></td>
-<td width="50%"><img src="docs/screenshots/plugins.png" width="100%" alt="插件" /></td>
-</tr>
-<tr>
-<td align="center"><sub>打开应用：标志、开场白、工作区与模式，输入框贴底</sub></td>
-<td align="center"><sub>插件页：内置插件可调参，实验性插件用开关启用</sub></td>
-</tr>
-</table>
+<p align="center">
+<img src="docs/screenshots/home.png" width="28%" />
+<img src="docs/screenshots/plugins.png" width="28%" />
+</p>
 
 ## 快速开始
 
