@@ -10,6 +10,18 @@
 
 在手机上直接跑完整的 DeepSeek Harness，不连电脑、不需要服务器。
 
+
+## 项目数据
+
+[![提交活动](https://github-readme-activity-graph.vercel.app/graph?username=Chanray-May9&repo=deepseek-harness-for-android&theme=github-light&hide_border=true&area=true&custom_title=%E6%8F%90%E4%BA%A4%E6%B4%BB%E5%8A%A8)](https://github.com/Chanray-May9/deepseek-harness-for-android/graphs/commit-activity)
+
+<div align="center">
+
+[![仓库概况](https://github-readme-stats.vercel.app/api/pin/?username=Chanray-May9&repo=deepseek-harness-for-android&theme=default&hide_border=true)](https://github.com/Chanray-May9/deepseek-harness-for-android)
+
+[![Star 增长](https://api.star-history.com/svg?repos=Chanray-May9/deepseek-harness-for-android&type=Date)](https://star-history.com/#Chanray-May9/deepseek-harness-for-android&Date)
+
+</div>
 ## 它是什么
 
 一个安卓应用，把 DeepSeek Harness 的完整运行环境内置进 APK。装好之后点图标就能用，所有处理都在手机本地完成。
@@ -62,3 +74,4 @@ tools/sync-shell.cjs         # 把界面改动热推到已连接的设备
 ## 致谢
 
 界面与运行时来自 DeepSeek Harness。
+
