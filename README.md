@@ -11,7 +11,6 @@
 
 **在手机上直接运行完整的 DeepSeek Harness。** 不需要电脑，不需要服务器，不需要连任何外部地址。装好之后点图标就能用。
 
-> 项目仍在早期，欢迎一起贡献：[参与这个项目](#参与这个项目)
 
 ---
 
@@ -28,7 +27,7 @@
 - [常见问题](#常见问题)
 - [项目状态](#项目状态)
 - [已知限制](#已知限制)
-- [参与这个项目](#参与这个项目)
+- [代码位置](#代码位置)
 - [致谢](#致谢)
 
 ---
@@ -400,48 +399,26 @@ tools/sync-shell.cjs
 - 运行环境归档不进仓库，需要按脚本单独生成
 - 原生层是反编译恢复的代码，可读性一般
 
-## 参与这个项目
+## 代码位置
 
-这个项目还很粗，需要的东西比一个人能做完的多。
+改东西的时候大致是这几个入口：
 
-**欢迎大家一起来贡献。** 不问背景、不看履历，改一个错别字、修一个间距、报一个能复现的问题，都算。
-
-### 从哪儿下手
-
-| 想做的事 | 从哪开始 |
+| 想改什么 | 改哪个文件 |
 | --- | --- |
-| 改界面观感 | `mobile/phone-shell.rc2.css`，改完用 `tools/sync-shell.cjs` 热推到设备看效果 |
-| 改交互逻辑 | `mobile/phone-shell-ext.js`，事件分发、弹出层、抽屉都在这里 |
-| 修运行环境 | `RuntimeInstaller.java`，PRoot 挂载参数、解包流程 |
-| 加安卓能力 | `MainActivity.java`，JS 桥就一个类，加方法很方便 |
-| 补文档 | 就是这份 README，哪里说得不清楚直接改 |
+| 界面观感 | `mobile/phone-shell.rc2.css` |
+| 交互逻辑 | `mobile/phone-shell-ext.js` |
+| 运行环境 | `RuntimeInstaller.java` |
+| 安卓能力 | `MainActivity.java` |
 
-### 提 Issue 时请带上
+界面改动用 `tools/sync-shell.cjs` 推到设备上看效果，看完记得冷启动。
 
-- 手机型号、系统版本、CPU 架构
-- 出问题的具体步骤（点到哪个按钮、之前做了什么）
-- 运行日志：应用菜单 → 查看运行日志，最后十几行通常就够了
-- 如果是界面问题，一张截图胜过一段描述
+## 还没解决的问题
 
-### 提 Pull Request 时
-
-- 一次只改一件事，review 起来快
-- 界面改动附改动前后的截图
-- 改动涉及原生层的话，说明有没有在真机上验证过
-
-### 已知待办
-
-上面「已知限制」里那些都还没解决。其中这三项比较适合上手：
+上面「已知限制」里列的都没解决。其中这三项改起来相对独立：
 
 1. 把 `$PREFIX` 和手机共享存储挂进 PRoot（改 `RuntimeInstaller` 的挂载参数）
 2. 横屏与大屏的布局适配（改 CSS 的媒体查询）
 3. 首次启动速度（分析解包耗时分布，找可压缩的部分）
-
-下面是我本人 GitHub 账号的活跃度，能看出这个项目还在不在维护。
-
-[![GitHub 贡献热力图](https://ghchart.rshah.org/Chanray-May9)](https://github.com/Chanray-May9)
-
-[![GitHub 账号概况](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Chanray-May9&theme=default)](https://github.com/Chanray-May9)
 
 ## 致谢
 
