@@ -17,6 +17,7 @@
 ## 目录
 
 - [它是什么](#它是什么)
+- [界面](#界面)
 - [快速开始](#快速开始)
 - [使用指南](#使用指南)
 - [系统要求](#系统要求)
@@ -55,6 +56,18 @@ DeepSeek Harness 是一个把大模型能力、文件操作、命令执行、任
 | 需要 root | 否 | 否 |
 
 功能上两者一致——同一套界面、同一套工具、同一套工作区结构。
+
+## 界面
+
+<div align="center">
+
+<img src="docs/screenshots/home.png" width="30%" alt="欢迎页" />
+<img src="docs/screenshots/model-picker.png" width="30%" alt="模型选择" />
+<img src="docs/screenshots/drawer.png" width="30%" alt="侧栏" />
+
+</div>
+
+左：打开应用时的欢迎页。中：输入框上方的模型与推理等级选择。右：从左侧滑出的侧栏。
 
 ## 快速开始
 
