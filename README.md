@@ -11,6 +11,8 @@
 
 **在手机上直接运行完整的 DeepSeek Harness。** 不需要电脑，不需要服务器，不需要连任何外部地址。装好之后点图标就能用。
 
+> 项目仍在早期，欢迎一起贡献：[参与这个项目](#参与这个项目)
+
 ---
 
 ## 目录
@@ -433,7 +435,9 @@ tools/sync-shell.cjs
 
 ## 参与这个项目
 
-这个项目还很粗，需要的东西比一个人能做完的多。欢迎任何人一起来改。
+这个项目还很粗，需要的东西比一个人能做完的多。
+
+**欢迎大家一起来贡献。** 不问背景、不看履历，改一个错别字、修一个间距、报一个能复现的问题，都算。
 
 ### 从哪儿下手
 
@@ -491,5 +495,7 @@ tools/sync-shell.cjs
 如果这个项目对你有用，点个 Star 会让更多需要它的人看到：
 
 [![Star 增长](https://api.star-history.com/svg?repos=Chanray-May9/deepseek-harness-for-android&type=Date)](https://star-history.com/#Chanray-May9/deepseek-harness-for-android&Date)
+
+
 
 
