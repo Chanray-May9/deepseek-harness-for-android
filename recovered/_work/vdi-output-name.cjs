@@ -1,0 +1,1 @@
+const fs=require('fs');const p='work/read-ext4.cjs';let s=fs.readFileSync(p,'utf8').replace("out='work/recovered-apk/original-x64.apk'","out=process.argv[3]||'work/recovered-apk/original-x64.apk'");fs.writeFileSync(p,s);

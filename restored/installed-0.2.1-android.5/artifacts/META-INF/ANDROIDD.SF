@@ -1,0 +1,68 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: 8dUjKJvR0OHK1qLo67gfrLQTmGjfhMqnW1COQpcyWHY=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: JIWkFlEpp9ddnOW2Q5rW40FTEJ11jAZs1IkSMvn9Za4=
+
+Name: assets/android-abort-compat.js
+SHA-256-Digest: +JlFlodqQ2ArvTiYXKQ3pp9ikUFb81rzjouhN9UBto4=
+
+Name: assets/android-mobile.css
+SHA-256-Digest: vgkpZGKrxXQReooEVMH77T9k4fPtME/8GqSjRRu8J00=
+
+Name: assets/android-mobile.js
+SHA-256-Digest: HAHj/xsSv0op5ma8TGPBgcAePqf20mRY/LhigCZfDYo=
+
+Name: assets/android-smoke.mjs
+SHA-256-Digest: uu3TKGlq4GaCuUKxZJIWrdLdDEYNl0+haZMxFXhSgkg=
+
+Name: assets/android-web-compat.js
+SHA-256-Digest: Z4gjqPXQAMmZ12jvYC1qHF/loQyPkW04jDGLz4SPT8Y=
+
+Name: assets/harness-x64.tar.gz
+SHA-256-Digest: WMusXn8v6TQ4zlGtQXznI95aYzxnRSpbuXD/S9Zg0dU=
+
+Name: assets/loader32-x64.bin
+SHA-256-Digest: 8EdSVLGyuJKDglhzVIEpKnV9l9pdV6+m2okV7eCwhoI=
+
+Name: assets/node-x64.tar.gz
+SHA-256-Digest: VnJBNrMjDycFNyLGZDqeQn5X9Ns0+Z3pvWKJnfi192o=
+
+Name: assets/rootfs-x64.tar.gz
+SHA-256-Digest: Lx6yLZ50/KM6g2QkN+hx4w1Pmf5uGl8gtT6kdlFZVn4=
+
+Name: assets/runtime-x64.json
+SHA-256-Digest: O3w+5ZUSM3jpaMGZwp0rCW2EPmqxw8WbA56bh8TXD+0=
+
+Name: assets/third-party-licenses.txt
+SHA-256-Digest: CeN8O4tcsefP52ooBswBEtF5OHarUL5MM2eGiWhCHsg=
+
+Name: classes.dex
+SHA-256-Digest: 9Dwda9q759PwwOiRpLJSGR0WgX+jAhwG9x8M+/nfeTY=
+
+Name: lib/x86_64/libandroid-shmem.so
+SHA-256-Digest: 1mKFOMQbiNfUscUEbJbcHjzD1ctD3T02pYauqxUY8c8=
+
+Name: lib/x86_64/libloader.so
+SHA-256-Digest: 7XJQQWdQ3ayoTnE0Td0Cf34aqvWxX5h+xL66HYHiU3o=
+
+Name: lib/x86_64/libproot.so
+SHA-256-Digest: CI6G8KBbpx6S0fG2kguppPZ9OtXEQJFyaGF0YK5vb24=
+
+Name: lib/x86_64/libtalloc.so
+SHA-256-Digest: 1rnpYIH87GzbaV/akrfm+2kbIshrvYqFeUMsgPkUMX4=
+
+Name: res/drawable/ic_harness.xml
+SHA-256-Digest: uwGMLjumqtVlB88+d4IUayS4Uu3vomL8XeMt6pZnC4U=
+
+Name: res/drawable/ic_whale.xml
+SHA-256-Digest: oJtwNOUPrE14fndePJ1eearkX90FhIOIGjUtVtuWU9A=
+
+Name: res/drawable/launcher.png
+SHA-256-Digest: b9VSYfvqcIWcSRgZHSPl4rxMybTgyIZjCaIxzwHR0zA=
+
+Name: resources.arsc
+SHA-256-Digest: G2I9hpXm+Qi6wKtW9uyAVXmJuvod6gAPKR2EVW970Og=
+

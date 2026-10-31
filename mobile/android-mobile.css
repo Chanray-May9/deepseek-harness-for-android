@@ -1,0 +1,407 @@
+/* DeepSeek Harness — Android phone shell.
+   Scope: android only. Original layout, colours, icons and plugin surfaces stay untouched;
+   this file only re-arranges them for a 360–480px touch screen. */
+
+html[data-harness-android] {
+  -webkit-text-size-adjust: 100%;
+  --hm-gutter: 16px;
+  --hm-radius: 28px;
+  --hm-line: var(--dsw-alias-border-l3, #ececf0);
+  --hm-ink: var(--dsw-alias-label-primary, #12131a);
+  --hm-ink-2: var(--dsw-alias-label-secondary, #6b7280);
+  --hm-brand: #4d6bfe;
+  --hm-surface: var(--dsw-alias-bg-base, #fff);
+}
+
+/* ---------- frame: no permanent rail, drawer on demand ---------- */
+html[data-harness-android] .mP3x-q_frame {
+  grid-template-columns: 0 minmax(0, 1fr) 0 !important;
+}
+html[data-harness-android] .mP3x-q_sidebarCol {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+  z-index: 130;
+}
+html[data-harness-android] .mP3x-q_centerCol {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  min-width: 0 !important;
+}
+html[data-harness-android] .mP3x-q_rightbarCol {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+}
+
+/* collapsed rail: width 0, only the round drawer button stays */
+html[data-harness-android] .wtg9ga_root.wtg9ga_collapsed {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .wtg9ga_collapsed > .wtg9ga_logoRow {
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .wtg9ga_collapsed > :not(.wtg9ga_logoRow) {
+  display: none !important;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_toggle {
+  position: fixed !important;
+  left: var(--hm-gutter) !important;
+  top: var(--hm-gutter) !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hm-line) !important;
+  border-radius: 50% !important;
+  background: var(--hm-surface) !important;
+  color: var(--hm-ink) !important;
+  box-shadow: 0 1px 2px #00000008;
+  z-index: 132;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_toggle svg {
+  width: 20px;
+  height: 20px;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_railMark {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--hm-ink);
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_railMark svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* expanded: full-height drawer above the content */
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) {
+  position: fixed !important;
+  inset: 0 auto 0 0 !important;
+  width: min(84vw, 320px) !important;
+  z-index: 140;
+  background: var(--hm-surface) !important;
+  box-shadow: 12px 0 40px #0000001f;
+  padding: 8px 8px 0 !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_toggle {
+  position: absolute !important;
+  right: 8px !important;
+  top: 10px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 0 !important;
+  background: transparent !important;
+  z-index: 141;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_newSession {
+  min-height: 48px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_panelRow {
+  min-height: 48px;
+  border-radius: 12px;
+  font-size: 16px;
+  gap: 12px;
+  padding: 0 10px;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_panelGlyph svg {
+  width: 22px;
+  height: 22px;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_regionArea {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 8px;
+}
+html[data-harness-android] #harness-drawer-scrim {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 135;
+  background: #0b0d121f;
+}
+html[data-harness-android] body:has(.wtg9ga_root:not(.wtg9ga_collapsed)) #harness-drawer-scrim {
+  display: block;
+}
+
+/* ---------- top bar: round drawer button + right capsule ---------- */
+html[data-harness-android] .an3WzG_header {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+html[data-harness-android] .an3WzG_header:not(.an3WzG_headerBlank) {
+  position: fixed;
+  left: 68px;
+  right: 132px;
+  top: var(--hm-gutter);
+  height: 44px !important;
+  min-height: 44px !important;
+  padding: 0 !important;
+  z-index: 90;
+  background: transparent;
+}
+html[data-harness-android] .an3WzG_body {
+  padding-top: 0 !important;
+}
+html[data-harness-android] .an3WzG_scrollBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0 !important;
+  scrollbar-gutter: auto !important;
+}
+
+#harness-mobile-actions {
+  position: fixed;
+  top: var(--hm-gutter);
+  right: var(--hm-gutter);
+  height: 44px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 4px;
+  border: 1px solid var(--hm-line);
+  border-radius: 22px;
+  background: var(--hm-surface);
+  box-shadow: 0 1px 2px #00000008;
+  z-index: 100;
+}
+#harness-mobile-actions > button {
+  width: 38px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  background: transparent;
+  color: var(--hm-ink);
+  cursor: pointer;
+}
+#harness-mobile-actions > button:active {
+  background: #0000000a;
+}
+#harness-mobile-actions svg {
+  width: 21px;
+  height: 21px;
+}
+#harness-mobile-actions[hidden] {
+  display: none;
+}
+
+/* ---------- welcome block ---------- */
+html[data-harness-android] .an3WzG_composerSeat {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+html[data-harness-android] .an3WzG_composerStack,
+html[data-harness-android] .an3WzG_composerHero {
+  flex: 1 1 auto;
+  min-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0 !important;
+  padding: 32vh var(--hm-gutter) max(46px, env(safe-area-inset-bottom)) !important;
+}
+
+html[data-harness-android] .WOwLGG_root {
+  flex: 0 0 auto !important;
+  height: auto !important;
+  align-self: stretch;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+html[data-harness-android] .WOwLGG_stack {
+  align-items: center;
+  gap: 0 !important;
+  width: 100%;
+}
+html[data-harness-android] .WOwLGG_headline {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: center;
+  width: 100%;
+}
+html[data-harness-android] .WOwLGG_headline > *:first-child {
+  width: 52px;
+  height: 52px;
+  flex: none;
+  color: var(--hm-brand) !important;
+}
+html[data-harness-android] .WOwLGG_headline > *:first-child svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+html[data-harness-android] .WOwLGG_headline > *:first-child svg,
+html[data-harness-android] .WOwLGG_headline > *:first-child img {
+  width: 52px;
+  height: 52px;
+}
+html[data-harness-android] .WOwLGG_titleGroup {
+  justify-content: center;
+  gap: 0 !important;
+}
+html[data-harness-android] .WOwLGG_fish {
+  width: 52px !important;
+  height: auto !important;
+  color: var(--hm-brand) !important;
+  fill: var(--hm-brand) !important;
+}
+html[data-harness-android] .WOwLGG_fish path {
+  fill: var(--hm-brand) !important;
+}
+html[data-harness-android] .WOwLGG_previewBadge {
+  display: none !important;
+}
+
+/* ---------- workspace + mode rows (stacked, left aligned) ---------- */
+html[data-harness-android] .an3WzG_heroWorkspaceRow {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px !important;
+  margin-top: auto;
+  padding: 0 0 10px !important;
+}
+html[data-harness-android] .WOwLGG_workspace,
+html[data-harness-android] .m2hUqa_seat {
+  font-size: 17px !important;
+  line-height: 26px !important;
+  min-height: 40px;
+  gap: 8px !important;
+  padding: 0 6px 0 2px !important;
+  color: var(--hm-ink);
+}
+html[data-harness-android] .WOwLGG_workspace svg,
+html[data-harness-android] .m2hUqa_seat svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+html[data-harness-android] .an3WzG_heroWorkspaceRow .WOwLGG_workspace > svg:last-child,
+html[data-harness-android] .m2hUqa_seat > svg:last-child {
+  width: 16px;
+  height: 16px;
+  opacity: 0.55;
+}
+
+/* ---------- composer card ---------- */
+html[data-harness-android] .GRgSLq_root,
+html[data-harness-android] .GRgSLq_hero {
+  padding: 0 !important;
+  width: 100%;
+}
+html[data-harness-android] .GRgSLq_card,
+html[data-harness-android] .GRgSLq_shell {
+  border: 1px solid var(--hm-line) !important;
+  border-radius: var(--hm-radius) !important;
+  box-shadow: 0 6px 22px #0b0d120a !important;
+  background: var(--hm-surface) !important;
+  padding: 10px 8px 8px !important;
+  gap: 6px !important;
+  min-height: 118px;
+  box-sizing: border-box;
+}
+html[data-harness-android] [data-composer-input],
+html[data-harness-android] .GRgSLq_input {
+  font-size: 17px !important;
+  line-height: 26px !important;
+  min-height: 40px;
+  padding: 6px 12px 0 !important;
+}
+html[data-harness-android] .GRgSLq_placeholder {
+  font-size: 17px !important;
+  line-height: 26px !important;
+  left: 12px !important;
+  right: 12px !important;
+  top: 6px !important;
+}
+html[data-harness-android] .GRgSLq_row {
+  gap: 6px !important;
+  padding: 0 2px !important;
+  align-items: center;
+}
+html[data-harness-android] .GRgSLq_add,
+html[data-harness-android] .GRgSLq_primary {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  flex: none;
+}
+html[data-harness-android] .GRgSLq_add svg,
+html[data-harness-android] .GRgSLq_primary svg {
+  width: 22px;
+  height: 22px;
+}
+html[data-harness-android] ._86kJGG_trigger,
+html[data-harness-android] ._9r0rkG_trigger {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  min-height: 40px;
+  gap: 6px;
+}
+html[data-harness-android] ._86kJGG_trigger svg,
+html[data-harness-android] ._9r0rkG_trigger svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* single-row composer, switchable from General settings */
+html[data-harness-android][data-hm-composer=single] .GRgSLq_card,
+html[data-harness-android][data-hm-composer=single] .GRgSLq_shell {
+  min-height: 60px;
+  border-radius: 30px !important;
+  padding: 8px 8px 8px 10px !important;
+}
+
+/* settings: full screen, one-line category tabs */
+html[data-harness-android] [role=dialog] {
+  max-width: calc(100vw - 16px) !important;
+  max-height: calc(100dvh - 24px) !important;
+}
+html[data-harness-android] [role=tablist] {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+@media (max-height: 620px) {
+  html[data-harness-android] .WOwLGG_root { margin-top: 10vh; }
+  html[data-harness-android] .WOwLGG_headline { gap: 12px !important; font-size: 22px !important; }
+  html[data-harness-android] .GRgSLq_card,
+  html[data-harness-android] .GRgSLq_shell { min-height: 92px; }
+}

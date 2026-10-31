@@ -1,0 +1,1 @@
+const {execFileSync}=require('child_process');const adb='D:/Program Files/Netease/MuMu/nx_main/adb.exe';const run=(a)=>execFileSync(adb,['-s','127.0.0.1:16416',...a],{encoding:'utf8'});const pid=run(['shell','pidof','com.deepseek.harness.android']).trim();run(['forward','tcp:9316','localabstract:webview_devtools_remote_'+pid]);console.log('Harness PID',pid);

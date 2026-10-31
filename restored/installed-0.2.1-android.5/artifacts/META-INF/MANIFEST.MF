@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: aYbyRwI5lnezQLKbFqhFKPS8jNjai4SHPx0N0ArBD9Y=
+
+Name: assets/android-abort-compat.js
+SHA-256-Digest: /1rB1HiBhFuUCtcbMJwQ/zNccEm+fnMwT7rvDtjrIoA=
+
+Name: assets/android-mobile.css
+SHA-256-Digest: 6IgoL6zu5hC//MQbuEShW3vqyRMUfRcsbTnWY+uE2aU=
+
+Name: assets/android-mobile.js
+SHA-256-Digest: ZXXKZ4DxVAKxk7UzGA+46TXL/L0F6dK33f7iZbE9lD8=
+
+Name: assets/android-smoke.mjs
+SHA-256-Digest: J+fK36OQb+69A6TS8iARiVRG+lBuGEdYRcmON71EhRQ=
+
+Name: assets/android-web-compat.js
+SHA-256-Digest: Zz/dP2oHq/p5AjcblIMMs0VSPcB0O288i36aWnp2KUs=
+
+Name: assets/harness-x64.tar.gz
+SHA-256-Digest: fJQmtrlz/TbnjZ5tG6LPI1Q2PpQka6d1O296y1/o5oU=
+
+Name: assets/loader32-x64.bin
+SHA-256-Digest: /Vs5SqCAFhnik7dv5ugwo76zY67U+kuaWkHxOIoMubk=
+
+Name: assets/node-x64.tar.gz
+SHA-256-Digest: L69qOH6bYriI4hxU8BJJ+ydTf/7PGELyn0yRnQpZoP8=
+
+Name: assets/rootfs-x64.tar.gz
+SHA-256-Digest: 53tvEMJZDO+HKzPun2NaDj/R9X+wdMDlK1x/VhR6DIY=
+
+Name: assets/runtime-x64.json
+SHA-256-Digest: fxiDq4HaNXZvIRLNjnd2W/uv6Bj5Us7UzaRUsHHy+s4=
+
+Name: assets/third-party-licenses.txt
+SHA-256-Digest: ZgW8JbPD3JzyS22m4br9yQ5aOsTtGn2cB15VaG/d7CI=
+
+Name: classes.dex
+SHA-256-Digest: b+2Fqf98nUhr9GbLL80TZGNkHC5rym1wzgjcDcm8Wn0=
+
+Name: lib/x86_64/libandroid-shmem.so
+SHA-256-Digest: CSkmBgKYrNN3jmI5Az167xKA3LWa6+Aho3GWEuajRl8=
+
+Name: lib/x86_64/libloader.so
+SHA-256-Digest: qDawVpyEsWYTM9FrrPazlv8I/qgWpck2qC4I3e7Kg0E=
+
+Name: lib/x86_64/libproot.so
+SHA-256-Digest: lWH+xs+03SwH3AtB3siANhiX5iYUexg/sdEJL7la014=
+
+Name: lib/x86_64/libtalloc.so
+SHA-256-Digest: f6ZyKkMgSVsbhYMvx/0C3gyzZ7RfEWwZIbKDCmk22pA=
+
+Name: res/drawable/ic_harness.xml
+SHA-256-Digest: rLG1bMxMKCXX/nX2rgv69ep9WRajD5M49LUDNzzCJc4=
+
+Name: res/drawable/ic_whale.xml
+SHA-256-Digest: 2GZ+3enRikaqvrE98KOUy2vAO0XpdFHH++nVy5tZjMo=
+
+Name: res/drawable/launcher.png
+SHA-256-Digest: GlhnSMNU38ZFgIvpuv0s6pMTSCsylvoRjoE/bPh+DPo=
+
+Name: resources.arsc
+SHA-256-Digest: eSLjjVGgdOecDLhZiRJkYlgI857wVyOXIlDF2zPeSSE=
+

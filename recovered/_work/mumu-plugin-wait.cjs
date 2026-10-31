@@ -1,0 +1,1 @@
+const {Cdp}=require('./mumu-cdp.cjs');(async()=>{const c=await Cdp.connect();console.log(await c.eval("document.querySelector('.VOzbGW_options').innerText"));await new Promise(r=>setTimeout(r,3000));console.log('AFTER',await c.eval("document.querySelector('.VOzbGW_options').innerText"));c.close();})();

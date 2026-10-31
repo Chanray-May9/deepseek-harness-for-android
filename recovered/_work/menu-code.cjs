@@ -1,0 +1,1 @@
+const fs=require('fs'),s=fs.readFileSync('work/payload-x64/node_modules/@deepseek-ai/dsh-web-frontend/dist/assets/index-CN7NIWNw.js','utf8'),p=s.indexOf('function k_({open:');console.log(s.slice(p+1400,p+3300));console.log('\nTAIL\n',s.slice(p+5600,p+7600));

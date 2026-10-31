@@ -1,0 +1,1 @@
+const {Cdp}=require('./mumu-cdp.cjs');(async()=>{const c=await Cdp.connect();console.log(await c.eval(`JSON.stringify(Array.from(document.querySelectorAll('button')).map(b=>({label:b.getAttribute('aria-label'),text:b.textContent,cls:b.className})).filter(b=>b.label==='关闭'||/关闭|开始使用/.test(b.text)))`));await c.shot('outputs/mumu-home-v3.png');c.close()})()

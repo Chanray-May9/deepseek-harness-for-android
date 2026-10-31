@@ -1,0 +1,1 @@
+const fs=require('fs');const file='D:/Program Files/Netease/MuMu/vms/MuMuPlayer-15.0-1/data.vdi';const fd=fs.openSync(file,'r'),h=Buffer.alloc(512);fs.readSync(fd,h,0,h.length,0);console.log('signature',h.subarray(0,64).toString());for(let o=64;o<400;o+=16)console.log(o,h.subarray(o,o+16).toString('hex'));fs.closeSync(fd);

@@ -1,0 +1,30 @@
+{
+  "arch": "x64",
+  "abi": "x86_64",
+  "ubuntuRelease": "24.04.5",
+  "rootfsSha256": "e77b6f10c2590cef872b33ee9f635a0e3fd1f57fb074c0e52b5c7f56147a0c86",
+  "nodeVersion": "v24.16.0",
+  "nodeSha256": "2faf6a387e9b62b888e21c54f01249fb27537ffecf1842f29f4c919d0a59a0ff",
+  "prootVersion": "5.1.107.101",
+  "harnessVersion": "0.2.1-rc.2",
+  "androidNativePackages": [
+    {
+      "name": "proot",
+      "version": "5.1.107.101",
+      "filename": "pool/main/p/proot/proot_5.1.107.101_x86_64.deb",
+      "sha256": "85adb8d0d2e1edc6c56e60c17136adf05e54ce75f69407ec7116a4c5997eaed5"
+    },
+    {
+      "name": "libtalloc",
+      "version": "2.5.0",
+      "filename": "pool/main/libt/libtalloc/libtalloc_2.5.0_x86_64.deb",
+      "sha256": "b8c6d95f20075dc1f9ec6573575b2444e8d526e48e0d8d6d5cf4e071e6e06530"
+    },
+    {
+      "name": "libandroid-shmem",
+      "version": "0.7",
+      "filename": "pool/main/liba/libandroid-shmem/libandroid-shmem_0.7_x86_64.deb",
+      "sha256": "ffa9e4c87467b158b148d0ff92dda796aa038276c2075af3269cdcdb06f25797"
+    }
+  ]
+}

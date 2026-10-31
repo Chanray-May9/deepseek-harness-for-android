@@ -1,0 +1,1 @@
+const fs=require('fs');const net=require('net');const u=fs.readFileSync('work/qa-backend.log','utf8').match(/http:\/\/127\.0\.0\.1:3090\/\S+/)[0];(async()=>{const r=await fetch(u);console.log('Original runtime HTTP',r.status);console.log('Original UI HTML title',/<title>([^<]+)/.exec(await r.text())?.[1]);})().catch(e=>console.log(e.message));

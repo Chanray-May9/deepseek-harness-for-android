@@ -1,0 +1,1 @@
+const fs=require('fs');const p='outputs/DeepSeekHarness-Android-source/app/src/main/assets/android-mobile.css';let s=fs.readFileSync(p,'utf8');s=s.replace(/^html\[data-harness-android\] \.wSkVaW_composerHero>\.pXSMma_root \{ display:none; \}$/m,'html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { display:flex; }');fs.writeFileSync(p,s);

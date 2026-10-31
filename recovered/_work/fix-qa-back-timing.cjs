@@ -1,0 +1,1 @@
+const fs=require('fs'),p='work/mumu-acceptance-v2.cjs';let s=fs.readFileSync(p,'utf8');s=s.replace("await c.eval('window.HarnessMobile.back();window.HarnessMobile.back();window.HarnessMobile.back()');await delay(200);","for(let i=0;i<3;i++){await c.eval('window.HarnessMobile.back()');await delay(180);}");fs.writeFileSync(p,s);

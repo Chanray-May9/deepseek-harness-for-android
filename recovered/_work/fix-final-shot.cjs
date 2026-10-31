@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('work/mumu-finish-v3.cjs','utf8');s=s.replace("run(['shell','input','keyevent','4']);await delay(300);","await delay(300);");fs.writeFileSync('work/mumu-finish-v3.cjs',s)

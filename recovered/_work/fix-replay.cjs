@@ -1,0 +1,1 @@
+const fs=require('fs');const p='work/replay-source-patches.cjs';let s=fs.readFileSync(p,'utf8');s=s.replace("code='const fs=require(\"fs\");'+code.slice(code.indexOf('let p='),code.indexOf(\"node outputs/\"))","code='const fs=require(\"fs\"),project=\"outputs/DeepSeekHarness-Android-source\";'+code.slice(code.indexOf('let p='))");fs.writeFileSync(p,s);

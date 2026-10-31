@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('work/qa-settings.cjs','utf8');s=s.replace("await p.waitForTimeout(500);await p.screenshot", "await p.waitForTimeout(500);await p.addStyleTag({content:fs.readFileSync('work/mobile.css','utf8')});await p.screenshot");fs.writeFileSync('work/qa-settings2.cjs',s);

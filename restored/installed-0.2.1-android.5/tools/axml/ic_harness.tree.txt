@@ -1,0 +1,12 @@
+N: android=http://schemas.android.com/apk/res/android (line=1)
+  E: vector (line=1)
+    A: http://schemas.android.com/apk/res/android:height(0x01010155)=108.000000dp
+    A: http://schemas.android.com/apk/res/android:width(0x01010159)=108.000000dp
+    A: http://schemas.android.com/apk/res/android:viewportWidth(0x01010402)=108
+    A: http://schemas.android.com/apk/res/android:viewportHeight(0x01010403)=108
+      E: path (line=2)
+        A: http://schemas.android.com/apk/res/android:fillColor(0x01010404)=#ff4d6bfe
+        A: http://schemas.android.com/apk/res/android:pathData(0x01010405)="M20,12 L88,12 Q96,12 96,20 L96,88 Q96,96 88,96 L20,96 Q12,96 12,88 L12,20 Q12,12 20,12" (Raw: "M20,12 L88,12 Q96,12 96,20 L96,88 Q96,96 88,96 L20,96 Q12,96 12,88 L12,20 Q12,12 20,12")
+      E: path (line=3)
+        A: http://schemas.android.com/apk/res/android:fillColor(0x01010404)=#ffffffff
+        A: http://schemas.android.com/apk/res/android:pathData(0x01010405)="M28,33 L38,33 L38,49 L70,49 L70,33 L80,33 L80,75 L70,75 L70,59 L38,59 L38,75 L28,75 Z" (Raw: "M28,33 L38,33 L38,49 L70,49 L70,33 L80,33 L80,75 L70,75 L70,59 L38,59 L38,75 L28,75 Z")

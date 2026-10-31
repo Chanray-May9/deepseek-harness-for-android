@@ -1,0 +1,1 @@
+const tar=require('./work/build-deps/node_modules/tar');tar.t({file:'outputs/DeepSeekHarness-Android-source/app/src/main/assets/rootfs-arm64.tar.gz',onReadEntry:e=>{if(e.path==='etc/resolv.conf'||e.path==='etc/hosts')console.log(e.path,e.type,e.linkpath)}});

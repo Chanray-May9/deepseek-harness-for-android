@@ -1,0 +1,23 @@
+# Build outputs
+build/
+**/build/
+*.apk
+*.aab
+*.idsig
+*.dex
+*.class
+
+# Runtime archives: reproducible from tools/build-*.cjs, far beyond GitHub's
+# 100 MB file limit. Shipped through Releases instead.
+*.tar.gz
+*.tar.xz
+*.zip
+
+# Reference copies of the original package (kept local, not distributable)
+restored/original-verbatim/
+delivery/
+
+# Local scratch
+tmp/
+*.log
+node_modules/

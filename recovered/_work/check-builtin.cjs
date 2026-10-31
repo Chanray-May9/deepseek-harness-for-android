@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');const base='work/payload-arm64/node_modules';console.log('ARM64 builtin binding packages',fs.readdirSync(base).filter(n=>n.startsWith('node-addon-require-builtin-')));const arm=JSON.parse(fs.readFileSync(base+'/node-addon-require-builtin/package.json'));console.log('Binding version',arm.version);

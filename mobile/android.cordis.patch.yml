@@ -1,0 +1,22 @@
+# Android phone profile overlay.
+# The phone runs the original Harness runtime inside the app's private Linux
+# rootfs. Two deployment facts differ from a desktop install:
+#   1. the first-use Workspace lives under /root/workspace, not the platform
+#      Documents directory;
+#   2. PRoot provides no namespaces/seccomp, so the kernel-sandbox backends must
+#      stay off and Bash runs directly inside the app's own tree.
+- id: workspace-controller
+  config:
+    documentsDirectory: !!js process.env.DSH_ANDROID_WORKSPACE_ROOT ?? '/root/workspace'
+
+- id: sandbox-policy
+  config:
+    mode: danger-full-access
+    workspaceRoot: !!js process.env.DSH_ANDROID_WORKSPACE_ROOT ?? '/root/workspace'
+
+- id: approval
+  config:
+    policy: never
+
+- id: bash-sandbox
+  disabled: true

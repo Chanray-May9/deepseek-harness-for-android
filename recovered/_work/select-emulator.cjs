@@ -1,0 +1,1 @@
+const fs=require('fs');const s=fs.readFileSync('work/android-repository.xml','utf8'); const p=s.split('<remotePackage').filter(x=>x.startsWith(' path="emulator"')).find(x=>x.split('</remotePackage>')[0].includes('ref="channel-0"')); const a=p.split('<archive>').find(x=>x.includes('<host-os>windows</host-os>'));console.log(a.match(/<url>([^<]+)/)[1]);

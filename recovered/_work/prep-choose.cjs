@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('work/capture-configured.cjs','utf8');s=s.replace("await p.reload();await p.waitForTimeout(1800);", "await p.reload();await p.waitForTimeout(1800);await p.getByRole('button',{name:'选择工作区',exact:true}).click();await p.waitForTimeout(400);");fs.writeFileSync('work/capture-choose.cjs',s);

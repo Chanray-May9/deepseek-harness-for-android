@@ -1,0 +1,59 @@
+{
+ "original": "installed-base.apk",
+ "rebuilt": "DeepSeekHarness-Android-0.2.1-android.5-rebuilt.apk",
+ "assets": {
+  "entries": 11,
+  "identical": 11,
+  "differing": 0
+ },
+ "nativeLibs": {
+  "entries": 4,
+  "identical": 4,
+  "differing": 0
+ },
+ "resources": {
+  "entries": 3,
+  "identical": 1,
+  "differing": 2
+ },
+ "overall": {
+  "entriesOriginal": 24,
+  "entriesRebuilt": 24,
+  "identical": 17,
+  "onlyInOriginal": [
+   "META-INF/ANDROIDD.RSA",
+   "META-INF/ANDROIDD.SF"
+  ],
+  "onlyInRebuilt": [
+   "META-INF/REBUILDK.RSA",
+   "META-INF/REBUILDK.SF"
+  ],
+  "differing": [
+   {
+    "entry": "AndroidManifest.xml",
+    "bytesA": 3504,
+    "bytesB": 3504
+   },
+   {
+    "entry": "META-INF/MANIFEST.MF",
+    "bytesA": 2035,
+    "bytesB": 2035
+   },
+   {
+    "entry": "classes.dex",
+    "bytesA": 2515348,
+    "bytesB": 2514172
+   },
+   {
+    "entry": "res/drawable/ic_harness.xml",
+    "bytesA": 828,
+    "bytesB": 828
+   },
+   {
+    "entry": "res/drawable/ic_whale.xml",
+    "bytesA": 3944,
+    "bytesB": 3944
+   }
+  ]
+ }
+}

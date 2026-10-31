@@ -1,0 +1,1 @@
+const fs=require('fs');for(const [file,id] of [['work/android-repository.xml','emulator'],['work/android-sysimg.xml','system-images;android-35;default;x86_64']]){const s=fs.readFileSync(file,'utf8'), chunks=s.split('<remotePackage');const m=chunks.find(x=>x.startsWith(' path="'+id+'"')); console.log(id,m?m.split('</remotePackage>')[0].slice(0,7000):'absent');}

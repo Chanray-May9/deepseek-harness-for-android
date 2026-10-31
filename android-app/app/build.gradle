@@ -1,0 +1,11 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'com.deepseek.harness.android'
+ compileSdk 35
+ defaultConfig { applicationId 'com.deepseek.harness.android'; minSdk 28; targetSdk 28; versionCode 1; versionName '0.2.1-android.1' }
+ buildTypes { release { minifyEnabled false } }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+ packaging { jniLibs { useLegacyPackaging = true } }
+ androidResources { noCompress += ['gz', 'xz'] }
+}
+dependencies { implementation 'org.apache.commons:commons-compress:1.27.1' }

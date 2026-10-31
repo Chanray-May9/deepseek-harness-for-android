@@ -1,0 +1,1196 @@
+{
+ "source": "C:/Users/Powersharp/Desktop/上下文.txt",
+ "count": 193,
+ "files": [
+  {
+   "rel": "_work/create-project.cjs",
+   "sourceLine": 172,
+   "bytes": 3335,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/prepare-assets.cjs",
+   "sourceLine": 223,
+   "bytes": 5302,
+   "version": 1
+  },
+  {
+   "rel": "_work/patch-prepare.cjs",
+   "sourceLine": 282,
+   "bytes": 1426,
+   "version": 1
+  },
+  {
+   "rel": "_work/patch-ubuntu.cjs",
+   "sourceLine": 293,
+   "bytes": 1063,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/java/com/deepseek/harness/android/RuntimeInstaller.java",
+   "sourceLine": 305,
+   "bytes": 5556,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/java/com/deepseek/harness/android/RuntimeService.java",
+   "sourceLine": 393,
+   "bytes": 4250,
+   "version": 1
+  },
+  {
+   "rel": "_work/read-sdk.cjs",
+   "sourceLine": 468,
+   "bytes": 362,
+   "version": 1
+  },
+  {
+   "rel": "_work/select-emulator.cjs",
+   "sourceLine": 474,
+   "bytes": 352,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/java/com/deepseek/harness/android/MainActivity.java",
+   "sourceLine": 480,
+   "bytes": 14596,
+   "version": 1
+  },
+  {
+   "rel": "_work/create-avd.cjs",
+   "sourceLine": 633,
+   "bytes": 678,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/build.ps1",
+   "sourceLine": 657,
+   "bytes": 3764,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-root.cjs",
+   "sourceLine": 725,
+   "bytes": 258,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-java.cjs",
+   "sourceLine": 729,
+   "bytes": 949,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/adapt-mobile.cjs",
+   "sourceLine": 736,
+   "bytes": 2000,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/pack-harness.cjs",
+   "sourceLine": 766,
+   "bytes": 854,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/package-apk.cjs",
+   "sourceLine": 779,
+   "bytes": 718,
+   "version": 1
+  },
+  {
+   "rel": "_work/portable-tools.cjs",
+   "sourceLine": 811,
+   "bytes": 2206,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/prepare.ps1",
+   "sourceLine": 822,
+   "bytes": 1062,
+   "version": 1
+  },
+  {
+   "rel": "_work/create-avd2.cjs",
+   "sourceLine": 842,
+   "bytes": 419,
+   "version": 1
+  },
+  {
+   "rel": "_work/SocketProbe.java",
+   "sourceLine": 853,
+   "bytes": 452,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-mobile.cjs",
+   "sourceLine": 869,
+   "bytes": 1005,
+   "version": 1
+  },
+  {
+   "rel": "_work/use-original-icon.cjs",
+   "sourceLine": 885,
+   "bytes": 606,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-http.cjs",
+   "sourceLine": 889,
+   "bytes": 345,
+   "version": 1
+  },
+  {
+   "rel": "_work/patch-browser-qa.cjs",
+   "sourceLine": 893,
+   "bytes": 465,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-features.cjs",
+   "sourceLine": 907,
+   "bytes": 1212,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-sidebar.cjs",
+   "sourceLine": 912,
+   "bytes": 1159,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-tools.cjs",
+   "sourceLine": 924,
+   "bytes": 1260,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/assets/android-smoke.mjs",
+   "sourceLine": 929,
+   "bytes": 1313,
+   "version": 1
+  },
+  {
+   "rel": "_work/add-native-smoke.cjs",
+   "sourceLine": 951,
+   "bytes": 2256,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/stage-assets.cjs",
+   "sourceLine": 963,
+   "bytes": 492,
+   "version": 1
+  },
+  {
+   "rel": "_work/add-devtools.cjs",
+   "sourceLine": 970,
+   "bytes": 2377,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-tools2.cjs",
+   "sourceLine": 985,
+   "bytes": 1450,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-settings.cjs",
+   "sourceLine": 997,
+   "bytes": 1450,
+   "version": 1
+  },
+  {
+   "rel": "_work/settings-layout.cjs",
+   "sourceLine": 1009,
+   "bytes": 187,
+   "version": 1
+  },
+  {
+   "rel": "_work/settings-classes.cjs",
+   "sourceLine": 1013,
+   "bytes": 331,
+   "version": 1
+  },
+  {
+   "rel": "_work/settings-css.cjs",
+   "sourceLine": 1017,
+   "bytes": 194,
+   "version": 1
+  },
+  {
+   "rel": "_work/create-settings-qa2.cjs",
+   "sourceLine": 1028,
+   "bytes": 305,
+   "version": 1
+  },
+  {
+   "rel": "_work/count-runtime.cjs",
+   "sourceLine": 1040,
+   "bytes": 501,
+   "version": 1
+  },
+  {
+   "rel": "_work/create-settings-sections.cjs",
+   "sourceLine": 1044,
+   "bytes": 801,
+   "version": 1
+  },
+  {
+   "rel": "_work/check-node-links.cjs",
+   "sourceLine": 1051,
+   "bytes": 344,
+   "version": 1
+  },
+  {
+   "rel": "_work/adapt-settings.cjs",
+   "sourceLine": 1055,
+   "bytes": 1797,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-settings-sections-qa.cjs",
+   "sourceLine": 1078,
+   "bytes": 509,
+   "version": 1
+  },
+  {
+   "rel": "_work/finalize-metadata.cjs",
+   "sourceLine": 1083,
+   "bytes": 1626,
+   "version": 1
+  },
+  {
+   "rel": "_work/pin-native.cjs",
+   "sourceLine": 1092,
+   "bytes": 983,
+   "version": 1
+  },
+  {
+   "rel": "app/README.md",
+   "sourceLine": 1098,
+   "bytes": 3426,
+   "version": 1
+  },
+  {
+   "rel": "app/VALIDATION.md",
+   "sourceLine": 1154,
+   "bytes": 2423,
+   "version": 1
+  },
+  {
+   "rel": "app/third-party/README.txt",
+   "sourceLine": 1181,
+   "bytes": 1494,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-loader-packaging.cjs",
+   "sourceLine": 1217,
+   "bytes": 1714,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-gradle-manifest.cjs",
+   "sourceLine": 1238,
+   "bytes": 1022,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/verify-apk.cjs",
+   "sourceLine": 1248,
+   "bytes": 2096,
+   "version": 1
+  },
+  {
+   "rel": "_work/check-builtin.cjs",
+   "sourceLine": 1266,
+   "bytes": 341,
+   "version": 1
+  },
+  {
+   "rel": "_work/bind-standard-streams.cjs",
+   "sourceLine": 1280,
+   "bytes": 421,
+   "version": 1
+  },
+  {
+   "rel": "_work/archive-delivery.cjs",
+   "sourceLine": 1285,
+   "bytes": 1634,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-native-menu.cjs",
+   "sourceLine": 1297,
+   "bytes": 524,
+   "version": 1
+  },
+  {
+   "rel": "_work/add-qa-bindings.cjs",
+   "sourceLine": 1302,
+   "bytes": 533,
+   "version": 1
+  },
+  {
+   "rel": "_work/enable-development-diagnostics.cjs",
+   "sourceLine": 1343,
+   "bytes": 857,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-soname.cjs",
+   "sourceLine": 1357,
+   "bytes": 1265,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-connect.cjs",
+   "sourceLine": 1373,
+   "bytes": 774,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-cdp.cjs",
+   "sourceLine": 1378,
+   "bytes": 1964,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-debug-web.cjs",
+   "sourceLine": 1392,
+   "bytes": 1077,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-csp.cjs",
+   "sourceLine": 1398,
+   "bytes": 338,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-test-compat.cjs",
+   "sourceLine": 1409,
+   "bytes": 760,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/assets/android-abort-compat.js",
+   "sourceLine": 1413,
+   "bytes": 1103,
+   "version": 1
+  },
+  {
+   "rel": "_work/install-web-compat.cjs",
+   "sourceLine": 1443,
+   "bytes": 2007,
+   "version": 1
+  },
+  {
+   "rel": "_work/test-abort-polyfill.cjs",
+   "sourceLine": 1462,
+   "bytes": 490,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-workspace-debug.cjs",
+   "sourceLine": 1467,
+   "bytes": 860,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-network-debug.cjs",
+   "sourceLine": 1471,
+   "bytes": 1365,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-forward.cjs",
+   "sourceLine": 1505,
+   "bytes": 360,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-caught-errors.cjs",
+   "sourceLine": 1509,
+   "bytes": 958,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-continue.cjs",
+   "sourceLine": 1521,
+   "bytes": 1276,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-create-workspace.cjs",
+   "sourceLine": 1526,
+   "bytes": 376,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-create-workspace2.cjs",
+   "sourceLine": 1530,
+   "bytes": 460,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-default-workspace.cjs",
+   "sourceLine": 1534,
+   "bytes": 450,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/assets/android-mobile.css",
+   "sourceLine": 1539,
+   "bytes": 4850,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/assets/android-mobile.js",
+   "sourceLine": 1575,
+   "bytes": 2413,
+   "version": 1
+  },
+  {
+   "rel": "_work/apply-mobile-v2.cjs",
+   "sourceLine": 1600,
+   "bytes": 1483,
+   "version": 1
+  },
+  {
+   "rel": "_work/mobile-startup-v2.cjs",
+   "sourceLine": 1605,
+   "bytes": 7782,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-screen.cjs",
+   "sourceLine": 1652,
+   "bytes": 265,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-layout-v2.cjs",
+   "sourceLine": 1670,
+   "bytes": 1019,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-settings-v2.cjs",
+   "sourceLine": 1684,
+   "bytes": 1104,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-tools-v2.cjs",
+   "sourceLine": 1697,
+   "bytes": 893,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-terminal-open.cjs",
+   "sourceLine": 1701,
+   "bytes": 1118,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-terminal-command.cjs",
+   "sourceLine": 1705,
+   "bytes": 971,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-model-settings.cjs",
+   "sourceLine": 1709,
+   "bytes": 1237,
+   "version": 1
+  },
+  {
+   "rel": "_work/finish-mobile-v2.cjs",
+   "sourceLine": 1713,
+   "bytes": 3416,
+   "version": 1
+  },
+  {
+   "rel": "_work/use-android-network.cjs",
+   "sourceLine": 1725,
+   "bytes": 1100,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-acceptance-v2.cjs",
+   "sourceLine": 1754,
+   "bytes": 5841,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-plugin-wait.cjs",
+   "sourceLine": 1770,
+   "bytes": 303,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-qa-waits.cjs",
+   "sourceLine": 1776,
+   "bytes": 625,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-qa-back-timing.cjs",
+   "sourceLine": 1781,
+   "bytes": 328,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-scrollbar-fix.cjs",
+   "sourceLine": 1789,
+   "bytes": 393,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-wait-drawer.cjs",
+   "sourceLine": 1794,
+   "bytes": 472,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-toolbar-position.cjs",
+   "sourceLine": 1806,
+   "bytes": 539,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-toolbar-containment.cjs",
+   "sourceLine": 1810,
+   "bytes": 482,
+   "version": 1
+  },
+  {
+   "rel": "_work/align-mobile-toolbar.cjs",
+   "sourceLine": 1823,
+   "bytes": 943,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-cold-start.cjs",
+   "sourceLine": 1839,
+   "bytes": 1558,
+   "version": 1
+  },
+  {
+   "rel": "_work/check-mobile-apk.cjs",
+   "sourceLine": 1844,
+   "bytes": 820,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-drawer-debug.cjs",
+   "sourceLine": 1856,
+   "bytes": 566,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-toggle-timing.cjs",
+   "sourceLine": 1860,
+   "bytes": 801,
+   "version": 1
+  },
+  {
+   "rel": "_work/mobile-back-visibility.cjs",
+   "sourceLine": 1864,
+   "bytes": 969,
+   "version": 1
+  },
+  {
+   "rel": "_work/package-compat-licenses.cjs",
+   "sourceLine": 1870,
+   "bytes": 787,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-restored-panel-startup.cjs",
+   "sourceLine": 1875,
+   "bytes": 1091,
+   "version": 1
+  },
+  {
+   "rel": "_work/update-apk-verifier.cjs",
+   "sourceLine": 1882,
+   "bytes": 1499,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-network-probe.cjs",
+   "sourceLine": 1891,
+   "bytes": 1076,
+   "version": 1
+  },
+  {
+   "rel": "_work/cold-start-ready-wait.cjs",
+   "sourceLine": 1903,
+   "bytes": 547,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-warm-start.cjs",
+   "sourceLine": 1908,
+   "bytes": 1660,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-files-and-finalize-report.cjs",
+   "sourceLine": 1912,
+   "bytes": 2512,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-native-final-check.cjs",
+   "sourceLine": 1916,
+   "bytes": 658,
+   "version": 1
+  },
+  {
+   "rel": "_work/finalize-native-report.cjs",
+   "sourceLine": 1927,
+   "bytes": 750,
+   "version": 1
+  },
+  {
+   "rel": "_work/qa-restore-file-pane.cjs",
+   "sourceLine": 1932,
+   "bytes": 385,
+   "version": 1
+  },
+  {
+   "rel": "_work/prepare-final-v2-source.cjs",
+   "sourceLine": 1937,
+   "bytes": 1644,
+   "version": 1
+  },
+  {
+   "rel": "app/README.md",
+   "sourceLine": 1952,
+   "bytes": 4292,
+   "version": 2
+  },
+  {
+   "rel": "app/VALIDATION.md",
+   "sourceLine": 2010,
+   "bytes": 2981,
+   "version": 2
+  },
+  {
+   "rel": "app/tools/qa/README.md",
+   "sourceLine": 2042,
+   "bytes": 959,
+   "version": 1
+  },
+  {
+   "rel": "_work/ship-mobile-v2.cjs",
+   "sourceLine": 2074,
+   "bytes": 1074,
+   "version": 1
+  },
+  {
+   "rel": "_work/verify-installed-final-apk.cjs",
+   "sourceLine": 2081,
+   "bytes": 1050,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-v3.cjs",
+   "sourceLine": 2152,
+   "bytes": 661,
+   "version": 1
+  },
+  {
+   "rel": "_work/apply-mobile-v3.cjs",
+   "sourceLine": 2158,
+   "bytes": 8308,
+   "version": 1
+  },
+  {
+   "rel": "_work/shot-v3.cjs",
+   "sourceLine": 2234,
+   "bytes": 372,
+   "version": 1
+  },
+  {
+   "rel": "_work/prepare-qa-v3.cjs",
+   "sourceLine": 2251,
+   "bytes": 487,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-layout-v3.cjs",
+   "sourceLine": 2263,
+   "bytes": 3870,
+   "version": 1
+  },
+  {
+   "rel": "_work/keyboard-shot.cjs",
+   "sourceLine": 2278,
+   "bytes": 510,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-keyboard-v3.cjs",
+   "sourceLine": 2301,
+   "bytes": 1642,
+   "version": 1
+  },
+  {
+   "rel": "_work/finalize-qa-script-v3.cjs",
+   "sourceLine": 2306,
+   "bytes": 1570,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-finish-v3.cjs",
+   "sourceLine": 2327,
+   "bytes": 2906,
+   "version": 1
+  },
+  {
+   "rel": "_work/clear-qa-draft.cjs",
+   "sourceLine": 2332,
+   "bytes": 791,
+   "version": 1
+  },
+  {
+   "rel": "_work/docs-v3.cjs",
+   "sourceLine": 2337,
+   "bytes": 3631,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-final-shot.cjs",
+   "sourceLine": 2351,
+   "bytes": 215,
+   "version": 1
+  },
+  {
+   "rel": "_work/ship-v3.cjs",
+   "sourceLine": 2363,
+   "bytes": 716,
+   "version": 1
+  },
+  {
+   "rel": "_work/clean-native-shot-v3.cjs",
+   "sourceLine": 2379,
+   "bytes": 765,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-v4.cjs",
+   "sourceLine": 2420,
+   "bytes": 376,
+   "version": 1
+  },
+  {
+   "rel": "_work/apply-mobile-v4.cjs",
+   "sourceLine": 2426,
+   "bytes": 8580,
+   "version": 1
+  },
+  {
+   "rel": "_work/prepare-v4-qa.cjs",
+   "sourceLine": 2503,
+   "bytes": 391,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-compact.cjs",
+   "sourceLine": 2523,
+   "bytes": 531,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-layout-v4.cjs",
+   "sourceLine": 2527,
+   "bytes": 5964,
+   "version": 1
+  },
+  {
+   "rel": "_work/focus-debug.cjs",
+   "sourceLine": 2544,
+   "bytes": 489,
+   "version": 1
+  },
+  {
+   "rel": "_work/readable-text-v4.cjs",
+   "sourceLine": 2559,
+   "bytes": 1266,
+   "version": 1
+  },
+  {
+   "rel": "_work/final-input-layout-v4.cjs",
+   "sourceLine": 2587,
+   "bytes": 1913,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-welcome-v4.cjs",
+   "sourceLine": 2597,
+   "bytes": 349,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-settings-v4.cjs",
+   "sourceLine": 2611,
+   "bytes": 848,
+   "version": 1
+  },
+  {
+   "rel": "_work/composer-setting-v4.cjs",
+   "sourceLine": 2615,
+   "bytes": 6089,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-preferences-v4.cjs",
+   "sourceLine": 2664,
+   "bytes": 8719,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-final-ui-v4.cjs",
+   "sourceLine": 2699,
+   "bytes": 527,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-pointer-v4.cjs",
+   "sourceLine": 2710,
+   "bytes": 1492,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-delivery-v4.cjs",
+   "sourceLine": 2714,
+   "bytes": 3043,
+   "version": 1
+  },
+  {
+   "rel": "_work/docs-v4.cjs",
+   "sourceLine": 2720,
+   "bytes": 6074,
+   "version": 1
+  },
+  {
+   "rel": "_work/ship-v4.cjs",
+   "sourceLine": 2773,
+   "bytes": 893,
+   "version": 1
+  },
+  {
+   "rel": "_work/measure-edge.cjs",
+   "sourceLine": 2808,
+   "bytes": 1300,
+   "version": 1
+  },
+  {
+   "rel": "_work/apply-edge-v5.cjs",
+   "sourceLine": 2812,
+   "bytes": 1176,
+   "version": 1
+  },
+  {
+   "rel": "_work/prepare-edge-v5.cjs",
+   "sourceLine": 2826,
+   "bytes": 163,
+   "version": 1
+  },
+  {
+   "rel": "_work/mumu-edge-v5.cjs",
+   "sourceLine": 2833,
+   "bytes": 4113,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-edge-qa.cjs",
+   "sourceLine": 2843,
+   "bytes": 292,
+   "version": 1
+  },
+  {
+   "rel": "_work/ship-edge-v5.cjs",
+   "sourceLine": 2855,
+   "bytes": 1731,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-session.cjs",
+   "sourceLine": 2997,
+   "bytes": 615,
+   "version": 1
+  },
+  {
+   "rel": "_work/read-history.cjs",
+   "sourceLine": 3002,
+   "bytes": 386,
+   "version": 1
+  },
+  {
+   "rel": "_work/recover-source-text.cjs",
+   "sourceLine": 3013,
+   "bytes": 1816,
+   "version": 1
+  },
+  {
+   "rel": "_work/find-source-reads.cjs",
+   "sourceLine": 3023,
+   "bytes": 867,
+   "version": 1
+  },
+  {
+   "rel": "_work/find-signing-history.cjs",
+   "sourceLine": 3044,
+   "bytes": 226,
+   "version": 1
+  },
+  {
+   "rel": "_work/replay-index.cjs",
+   "sourceLine": 3071,
+   "bytes": 267,
+   "version": 1
+  },
+  {
+   "rel": "_work/recover-source-async.cjs",
+   "sourceLine": 3075,
+   "bytes": 1701,
+   "version": 1
+  },
+  {
+   "rel": "_work/replay-source-patches.cjs",
+   "sourceLine": 3085,
+   "bytes": 2723,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-replay.cjs",
+   "sourceLine": 3101,
+   "bytes": 354,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-vdi.cjs",
+   "sourceLine": 3117,
+   "bytes": 324,
+   "version": 1
+  },
+  {
+   "rel": "_work/read-vdi.cjs",
+   "sourceLine": 3124,
+   "bytes": 1065,
+   "version": 1
+  },
+  {
+   "rel": "_work/read-ext4.cjs",
+   "sourceLine": 3128,
+   "bytes": 3286,
+   "version": 1
+  },
+  {
+   "rel": "_work/recover-apk-assets.cjs",
+   "sourceLine": 3142,
+   "bytes": 1237,
+   "version": 1
+  },
+  {
+   "rel": "_work/check-java-escapes.cjs",
+   "sourceLine": 3147,
+   "bytes": 585,
+   "version": 1
+  },
+  {
+   "rel": "_work/vdi-output-name.cjs",
+   "sourceLine": 3163,
+   "bytes": 220,
+   "version": 1
+  },
+  {
+   "rel": "_work/unpack-recovered-payload.cjs",
+   "sourceLine": 3168,
+   "bytes": 636,
+   "version": 1
+  },
+  {
+   "rel": "_work/unpack-termux.cjs",
+   "sourceLine": 3181,
+   "bytes": 561,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-ui-core.cjs",
+   "sourceLine": 3189,
+   "bytes": 404,
+   "version": 1
+  },
+  {
+   "rel": "_work/menu-code.cjs",
+   "sourceLine": 3196,
+   "bytes": 258,
+   "version": 1
+  },
+  {
+   "rel": "_work/core-tail.cjs",
+   "sourceLine": 3203,
+   "bytes": 175,
+   "version": 1
+  },
+  {
+   "rel": "_work/check-termux-native.cjs",
+   "sourceLine": 3210,
+   "bytes": 514,
+   "version": 1
+  },
+  {
+   "rel": "_work/fix-termux-elf-read.cjs",
+   "sourceLine": 3216,
+   "bytes": 176,
+   "version": 1
+  },
+  {
+   "rel": "_work/check-recovered-native-pages.cjs",
+   "sourceLine": 3225,
+   "bytes": 426,
+   "version": 1
+  },
+  {
+   "rel": "app/tools/adapt-android-runtime.cjs",
+   "sourceLine": 3231,
+   "bytes": 2473,
+   "version": 1
+  },
+  {
+   "rel": "_work/apply-mobile-v6.cjs",
+   "sourceLine": 3250,
+   "bytes": 2776,
+   "version": 1
+  },
+  {
+   "rel": "app/app/src/main/java/com/deepseek/harness/android/TermuxTerminalActivity.java",
+   "sourceLine": 3282,
+   "bytes": 8604,
+   "version": 1
+  },
+  {
+   "rel": "_work/install-termux-terminal.cjs",
+   "sourceLine": 3379,
+   "bytes": 2698,
+   "version": 1
+  },
+  {
+   "rel": "_work/capture-recovery.cjs",
+   "sourceLine": 3430,
+   "bytes": 2159,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-screen-data.cjs",
+   "sourceLine": 3458,
+   "bytes": 382,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-session-path.cjs",
+   "sourceLine": 3465,
+   "bytes": 428,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-session-list.cjs",
+   "sourceLine": 3470,
+   "bytes": 406,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-session-files.cjs",
+   "sourceLine": 3481,
+   "bytes": 296,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-session-shape.cjs",
+   "sourceLine": 3487,
+   "bytes": 783,
+   "version": 1
+  },
+  {
+   "rel": "_work/inspect-session-shape.cjs",
+   "sourceLine": 3494,
+   "bytes": 964,
+   "version": 2
+  },
+  {
+   "rel": "_work/inspect-session-shape.cjs",
+   "sourceLine": 3501,
+   "bytes": 1011,
+   "version": 3
+  },
+  {
+   "rel": "_work/compare-ui-files.cjs",
+   "sourceLine": 3528,
+   "bytes": 668,
+   "version": 1
+  },
+  {
+   "rel": "_work/create-screen-fixture.cjs",
+   "sourceLine": 3532,
+   "bytes": 1971,
+   "version": 1
+  },
+  {
+   "rel": "_work/prepare-configured.cjs",
+   "sourceLine": 3536,
+   "bytes": 805,
+   "version": 1
+  },
+  {
+   "rel": "_work/prep-choose.cjs",
+   "sourceLine": 3542,
+   "bytes": 341,
+   "version": 1
+  },
+  {
+   "rel": "_work/prepare-debug-screens.cjs",
+   "sourceLine": 3574,
+   "bytes": 769,
+   "version": 1
+  }
+ ],
+ "partials": [
+  {
+   "startLine": 114,
+   "rel": "(none)",
+   "reason": "unterminated"
+  },
+  {
+   "startLine": 1666,
+   "rel": "(none)",
+   "reason": "unterminated"
+  },
+  {
+   "startLine": 1681,
+   "rel": "(none)",
+   "reason": "unterminated"
+  },
+  {
+   "startLine": 1786,
+   "rel": "(none)",
+   "reason": "unterminated"
+  },
+  {
+   "startLine": 1814,
+   "rel": "(none)",
+   "reason": "unterminated"
+  },
+  {
+   "startLine": 2059,
+   "rel": "(none)",
+   "reason": "unterminated"
+  }
+ ]
+}

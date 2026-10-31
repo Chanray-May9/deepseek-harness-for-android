@@ -1,0 +1,1 @@
+const fs=require('fs');const tar=require('./build-deps/node_modules/tar');(async()=>{let links=[];await tar.t({file:'outputs/DeepSeekHarness-Android-source/app/src/main/assets/node-arm64.tar.gz',onReadEntry:e=>{if(e.type==='Link')links.push({path:e.path,target:e.linkpath})}});console.log('Node hard links:',links.length,links.slice(0,3));})();

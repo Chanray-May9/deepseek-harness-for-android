@@ -1,0 +1,59 @@
+
+/* Readable mobile controls and a bottom-aligned work area. */
+html[data-harness-android] { -webkit-text-size-adjust:100%; }
+html[data-harness-android] .pI_x6G_centerCol { padding-top:68px; }
+html[data-harness-android] .wSkVaW_composerHero { justify-content:flex-end; gap:8px; padding-bottom:max(16px,env(safe-area-inset-bottom)); }
+html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { display:flex; }
+html[data-harness-android] .wSkVaW_heroWorkspaceRow { flex-direction:column; align-items:flex-start; gap:4px; padding:0 24px; }
+html[data-harness-android] .pXSMma_workspace,html[data-harness-android] .cubgiG_seat { box-sizing:border-box; min-height:48px; max-width:100%; padding:4px 8px; gap:10px; font-size:18px; line-height:28px; }
+html[data-harness-android] .pXSMma_workspace svg,html[data-harness-android] .cubgiG_seat svg { width:24px; height:24px; flex:none; }
+html[data-harness-android] .pXSMma_workspace .pXSMma_chevron,html[data-harness-android] .cubgiG_seat .cubgiG_chevron { width:20px; height:20px; }
+html[data-harness-android] .wSkVaW_heroWorkspaceRow [data-slot='conversation.hero.agentPreset'] { display:block!important; min-width:0; max-width:100%; }
+html[data-harness-android] .wSkVaW_heroOptions:empty { display:none; }
+html[data-harness-android] .uV2eYG_card { font-size:18px; line-height:28px; gap:4px; padding-top:8px; }
+html[data-harness-android] .uV2eYG_input { font-size:18px; line-height:28px; padding:4px 12px 0 16px; }
+html[data-harness-android] .uV2eYG_placeholder { font-size:18px; line-height:28px; left:16px; right:12px; }
+html[data-harness-android] .uV2eYG_hero .uV2eYG_input { min-height:42px; }
+html[data-harness-android] .uV2eYG_row { padding:0 10px 8px; gap:8px; }
+html[data-harness-android] .uV2eYG_add,html[data-harness-android] .uV2eYG_primary { width:44px; height:44px; min-width:44px; transform:none; }
+html[data-harness-android] .uV2eYG_add svg,html[data-harness-android] .uV2eYG_primary svg { width:24px; height:24px; }
+html[data-harness-android] .iWlSmW_trigger,html[data-harness-android] ._7KE1Ra_trigger { box-sizing:border-box; min-height:44px; min-width:44px; font-size:16px; line-height:24px; }
+html[data-harness-android] .iWlSmW_triggerIcon svg,html[data-harness-android] ._7KE1Ra_triggerIcon { width:22px; height:22px; }
+html[data-harness-android] .uV2eYG_standardControls,html[data-harness-android] .uV2eYG_tools,html[data-harness-android] .uV2eYG_trailing { gap:8px; }
+html[data-harness-android] .wSkVaW_body { --dsh-composer-text-max-height:min(200px,30dvh); }
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle { width:48px!important; height:48px!important; top:8px!important; }
+html[data-harness-android] .hHd-Xa_toggle svg { width:24px; height:24px; }
+#harness-mobile-actions { top:8px; height:48px; border-radius:26px; }
+#harness-mobile-actions>button { width:48px; height:48px; }
+#harness-mobile-actions svg { width:24px; height:24px; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) { top:8px; left:72px; right:124px; height:48px; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) .wSkVaW_titleRow { height:48px; }
+html[data-harness-android] .wSkVaW_crumb { font-size:16px; min-height:44px; }
+html[data-harness-android] .hHd-Xa_root { font-size:16px; }
+html[data-harness-android] .hHd-Xa_newSession { min-height:48px; font-size:16px; }
+html[data-harness-android] .hHd-Xa_panelRow { min-height:48px; padding:10px 8px; }
+html[data-harness-android] .hHd-Xa_panelGlyph svg { width:22px; height:22px; }
+#harness-android-files { min-height:48px; font-size:16px; }
+html[data-harness-android] .VOzbGW_navTitle { height:44px!important; font-size:20px!important; }
+html[data-harness-android] .VOzbGW_navCell { height:48px!important; padding:10px 12px!important; font-size:16px!important; }
+html[data-harness-android] .VOzbGW_options { font-size:16px!important; line-height:1.6; }
+html[data-harness-android] .VOzbGW_options [class$='_rowTitle'],html[data-harness-android] .VOzbGW_options [class$='_rowLabel'] { font-size:16px!important; }
+html[data-harness-android] .VOzbGW_options [class$='_rowDescription'],html[data-harness-android] .VOzbGW_options [class$='_rowDesc'] { font-size:14px!important; line-height:22px; }
+html[data-harness-android] .VOzbGW_options button { min-height:44px; font-size:16px; }
+html[data-harness-android] .VOzbGW_close { min-width:44px; min-height:44px; }
+html[data-harness-android] [role=menuitem],html[data-harness-android] [role=option] { min-height:44px; box-sizing:border-box; font-size:16px; }
+html[data-harness-android] input:not([type=checkbox]):not([type=radio]):not([type=range]),html[data-harness-android] textarea { font-size:16px; }
+@media(max-height:500px) {
+ html[data-harness-android] .wSkVaW_heroWorkspaceRow { gap:0; }
+ html[data-harness-android] .pXSMma_workspace,html[data-harness-android] .cubgiG_seat { min-height:44px; }
+ html[data-harness-android] .wSkVaW_composerHero { gap:8px; padding-bottom:8px; }
+ html[data-harness-android] .wSkVaW_body { --dsh-composer-text-max-height:88px; }
+}
+
+/* Keep conversation text readable while honoring larger saved font sizes. */
+html[data-harness-android] .wSkVaW_root { --dsh-content-font-size:max(16px,var(--harness-preferred-content-size,14px)); --dsh-code-font-size:max(14px,var(--harness-preferred-code-size,11px)); --dsh-terminal-font-size:max(14px,var(--harness-preferred-terminal-size,13px)); }
+
+@media(max-height:500px) { html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { display:none; } }
+
+/* Raise only the card's upper edge; preserve content and surrounding layout. */
+html[data-harness-android][data-harness-composer-style=card] .uV2eYG_hero .uV2eYG_card { padding-top:14px; margin-top:-6px; }

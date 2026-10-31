@@ -1,0 +1,1 @@
+const {Cdp}=require('./mumu-cdp.cjs');(async()=>{const c=await Cdp.connect();console.log(await c.eval(`JSON.stringify({body:document.body.innerText,workspace:document.querySelector('.wSkVaW_heroWorkspaceRow')?.outerHTML,buttons:Array.from(document.querySelectorAll('.uV2eYG_row button')).map(b=>({cls:b.className,label:b.getAttribute('aria-label')}))},null,2)`));c.close()})()

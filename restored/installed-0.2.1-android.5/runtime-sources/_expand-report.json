@@ -1,0 +1,98 @@
+{
+ "maps": 4365,
+ "withContent": 1404,
+ "withoutContent": 2961,
+ "written": 3363,
+ "bytes": 19856669,
+ "failed": 0,
+ "bytesMB": 18.9,
+ "mapsWithoutEmbeddedContent": [
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\acp.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\acp.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\connection.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\connection.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\cookie-store.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\cookie-store.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\examples\\agent.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\examples\\client.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\examples\\dual-version-agent.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\examples\\http-client.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\examples\\http-server.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\examples\\ws-client.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\http-stream.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\http-stream.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\jsonrpc.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\jsonrpc.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\line-buffer.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\line-buffer.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\node-adapter.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\node-adapter.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\protocol-router.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\protocol-router.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\protocol.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\protocol.test.js.map",
+  "node_modules\\@agentclientprotocol\\sdk\\dist\\schema\\guards.gen.js.map"
+ ],
+ "topDirs": [
+  [
+   "node_modules\\web-streams-polyfill\\dist",
+   684
+  ],
+  [
+   "node_modules\\fontkit\\dist",
+   446
+  ],
+  [
+   "node_modules\\@modelcontextprotocol\\client\\dist",
+   391
+  ],
+  [
+   "node_modules\\@xterm\\headless\\lib-headless",
+   112
+  ],
+  [
+   "node_modules\\@earendil-works\\pi-ai\\dist\\providers",
+   93
+  ],
+  [
+   "node_modules\\protobufjs\\dist",
+   93
+  ],
+  [
+   "node_modules\\protobufjs\\dist\\light",
+   85
+  ],
+  [
+   "node_modules\\js-yaml\\dist",
+   78
+  ],
+  [
+   "node_modules\\@js-temporal\\polyfill\\dist",
+   60
+  ],
+  [
+   "node_modules\\@earendil-works\\pi-ai\\dist\\api",
+   43
+  ],
+  [
+   "node_modules\\protobufjs\\dist\\minimal",
+   34
+  ],
+  [
+   "node_modules\\@earendil-works\\pi-ai\\dist\\utils",
+   26
+  ],
+  [
+   "node_modules\\@opentelemetry\\api\\build\\esm\\trace",
+   22
+  ],
+  [
+   "node_modules\\@opentelemetry\\api\\build\\esnext\\trace",
+   22
+  ],
+  [
+   "node_modules\\@opentelemetry\\api\\build\\src\\trace",
+   22
+  ]
+ ]
+}

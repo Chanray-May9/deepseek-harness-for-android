@@ -1,0 +1,1 @@
+const fs=require('fs');const p='work/mumu-edge-v5.cjs';let s=fs.readFileSync(p,'utf8').replace("const before=JSON.parse",`await settings();await c.eval("document.querySelector('button[data-composer-style=card]').click()");await closeSettings();const before=JSON.parse`);fs.writeFileSync(p,s);

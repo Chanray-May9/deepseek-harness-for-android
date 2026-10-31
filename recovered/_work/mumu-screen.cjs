@@ -1,0 +1,1 @@
+const {execFileSync}=require('child_process'),fs=require('fs');const adb='D:/Program Files/Netease/MuMu/nx_main/adb.exe';fs.writeFileSync('outputs/mumu-startup-v2.png',execFileSync(adb,['-s','127.0.0.1:16416','exec-out','screencap','-p'],{maxBuffer:16*1024*1024}));

@@ -1,0 +1,8 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');const {Zip,ZipPassThrough}=require('./build-deps/node_modules/fflate');
+const root=path.resolve('outputs/DeepSeekHarness-Android-source'),output=path.resolve('outputs/DeepSeekHarness-Android-source.zip');const fd=fs.openSync(output,'w');let count=0,bytes=0;
+const zip=new Zip((err,data,final)=>{if(err)throw err;fs.writeSync(fd,data);if(final)fs.closeSync(fd);});
+function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['build','node_modules','.cache','.gradle','.git'].includes(e.name)||e.name==='local.properties'||e.name.endsWith('.apk')||e.name.endsWith('.idsig')||e.name.endsWith('.tmp'))continue;const file=path.join(dir,e.name);if(e.isDirectory())walk(file);else{const rel='DeepSeekHarness-Android-source/'+path.relative(root,file).replaceAll('\\','/');const data=fs.readFileSync(file);const entry=new ZipPassThrough(rel);zip.add(entry);entry.push(data,true);count++;bytes+=data.length;}}}
+walk(root);zip.end();
+const sha=file=>{const h=crypto.createHash('sha256'),fd=fs.openSync(file,'r'),buf=Buffer.allocUnsafe(1024*1024);let n;while((n=fs.readSync(fd,buf,0,buf.length,null))>0)h.update(buf.subarray(0,n));fs.closeSync(fd);return h.digest('hex');};
+const files=['DeepSeekHarness-Android-arm64.apk','DeepSeekHarness-Android-source.zip'];fs.writeFileSync('outputs/SHA256SUMS.txt',files.map(n=>sha('outputs/'+n)+'  '+n).join('\n')+'\n');
+console.log(JSON.stringify({sourceArchive:output,entries:count,uncompressedBytes:bytes,archiveBytes:fs.statSync(output).size,apkBytes:fs.statSync('outputs/'+files[0]).size},null,2));

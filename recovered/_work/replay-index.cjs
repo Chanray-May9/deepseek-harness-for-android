@@ -1,0 +1,1 @@
+const fs=require('fs');const cmds=JSON.parse(fs.readFileSync('work/recovered-command-index.json'));for(const r of cmds){const files=[...r.cmd.matchAll(/(?:^|\r?\n)node (work\/[a-zA-Z0-9_-]+\.cjs)/g)].map(m=>m[1]);if(files.length)console.log(r.line,files.join(', '));}

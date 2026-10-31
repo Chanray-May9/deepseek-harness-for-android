@@ -1,0 +1,1 @@
+const fs=require('fs');const cmds=JSON.parse(fs.readFileSync('work/recovered-command-index.json'));for(const r of cmds){if(/keystore|keytool/.test(r.cmd))console.log(JSON.stringify({line:r.line,preview:r.cmd.slice(0,2500)}));}

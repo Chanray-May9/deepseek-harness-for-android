@@ -1,0 +1,1 @@
+const {VdiReader}=require('./read-vdi.cjs'),{Ext4}=require('./read-ext4.cjs');const v=new VdiReader('D:/Program Files/Netease/MuMu/vms/MuMuPlayer-15.0-1/data.vdi'),e=new Ext4(v);for(const n of [4063699,4063707,4064076])console.log(n,e.list(n).map(x=>({...x,size:e.inode(x.ino).size})));v.close();

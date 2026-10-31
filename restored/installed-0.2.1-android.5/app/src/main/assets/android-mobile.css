@@ -1,0 +1,1312 @@
+html[data-harness-android] .pI_x6G_frame { grid-template-columns:0 minmax(0,1fr) 0!important; }
+html[data-harness-android] .pI_x6G_centerCol { padding-top:56px; box-sizing:border-box; }
+html[data-harness-android] .pI_x6G_sidebarCol { position:fixed!important; inset:0 auto 0 0!important; width:min(86vw,320px)!important; z-index:120; border-right:0!important; box-shadow:12px 0 36px #0002; }
+html[data-harness-android] .pI_x6G_frame[data-sidebar-collapsed]>.pI_x6G_sidebarCol { width:0!important; overflow:visible!important; background:transparent!important; box-shadow:none!important; pointer-events:none; }
+html[data-harness-android] .hHd-Xa_root.hHd-Xa_collapsed { width:0!important; padding:0!important; background:transparent!important; }
+html[data-harness-android] .hHd-Xa_collapsed>.hHd-Xa_logoRow { width:0!important; height:0!important; margin:0!important; padding:0!important; overflow:visible!important; }
+html[data-harness-android] .hHd-Xa_collapsed>:not(.hHd-Xa_logoRow) { display:none!important; }
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle { position:fixed!important; left:12px!important; top:6px!important; width:44px!important; height:44px!important; display:flex!important; align-items:center; justify-content:center; border:0!important; border-radius:12px!important; background:var(--dsw-specific-sidebar-fill,#f4f5f7)!important; pointer-events:auto!important; z-index:121; }
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_railMark { display:none!important; }
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_panelIcon { display:block!important; }
+html[data-harness-android] .pI_x6G_handle { display:none!important; }
+#harness-drawer-backdrop { display:none; position:fixed; inset:0; z-index:110; background:#0003; }
+body:has(.pI_x6G_frame:not([data-sidebar-collapsed])) #harness-drawer-backdrop { display:block; }
+#harness-android-files { position:absolute; left:12px; right:12px; bottom:66px; min-height:42px; border:0; border-radius:8px; padding:10px 12px; text-align:left; background:transparent; color:var(--dsw-alias-label-primary,#222); font:inherit; cursor:pointer; }
+#harness-android-files:hover { background:var(--dsw-specific-sidebar-nav-item-hover,#eceef1); }
+.pI_x6G_frame[data-sidebar-collapsed] #harness-android-files { display:none!important; }
+html[data-harness-android] .VOzbGW_overlay { padding:0!important; align-items:stretch!important; justify-content:stretch!important; }
+html[data-harness-android] .VOzbGW_panel { display:flex!important; flex-direction:column!important; width:100vw!important; min-width:0!important; max-width:100vw!important; height:100dvh!important; max-height:100dvh!important; border-radius:0!important; margin:0!important; }
+html[data-harness-android] .VOzbGW_nav { box-sizing:border-box!important; flex:none!important; width:100%!important; gap:8px!important; padding:10px 12px 8px!important; border-bottom:1px solid var(--dsw-alias-border-l3,#eef0f3); }
+html[data-harness-android] .VOzbGW_navTitle { height:40px!important; padding:0 8px!important; display:flex!important; align-items:center; font-size:18px!important; }
+html[data-harness-android] .VOzbGW_navList { display:flex!important; flex-direction:row!important; flex-wrap:nowrap!important; gap:4px!important; overflow-x:auto!important; overflow-y:hidden!important; scrollbar-width:none; }
+html[data-harness-android] .VOzbGW_navCell { flex:0 0 auto!important; height:40px!important; gap:6px!important; padding:8px!important; font-size:13px!important; }
+html[data-harness-android] .VOzbGW_content { display:flex!important; flex-direction:column!important; flex:1!important; min-height:0!important; width:100%!important; }
+html[data-harness-android] .VOzbGW_header { position:absolute!important; top:0!important; right:0!important; height:54px!important; padding:14px 14px 0!important; }
+html[data-harness-android] .VOzbGW_options { flex:1!important; min-height:0!important; overflow-y:auto!important; padding:16px 20px 32px!important; }
+html[data-harness-android] .VOzbGW_options [class$='_row'] { flex-wrap:wrap!important; row-gap:10px!important; }
+html[data-harness-android] .VOzbGW_options [class$='_rowText'] { min-width:0!important; flex:1 1 150px!important; }
+html[data-harness-android] .VOzbGW_options ._8HJdBW_cubeRow { display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; gap:8px!important; }
+html[data-harness-android] .VOzbGW_options ._8HJdBW_themeCube { min-width:0!important; width:auto!important; padding:12px 6px!important; white-space:nowrap; }
+@media (max-width:600px) {
+ html[data-harness-android] [role=dialog]:not(.VOzbGW_panel) { max-width:calc(100vw - 24px)!important; max-height:calc(100dvh - 32px)!important; }
+ html[data-harness-android] .wSkVaW_heroWorkspaceRow { flex-wrap:wrap; }
+ html[data-harness-android] [role=tablist] { overflow-x:auto; }
+}
+html[data-harness-android] .pI_x6G_centerCol { grid-column:2!important; grid-row:1!important; }
+html[data-harness-android] .pI_x6G_rightbarCol { grid-column:3!important; grid-row:1!important; }
+html[data-harness-android] button[data-sidebar-right-expand] { position:fixed!important; top:6px!important; right:12px!important; width:44px!important; height:44px!important; z-index:80; }
+html[data-harness-android] .VOzbGW_navList::-webkit-scrollbar { display:none; height:0; }
+html[data-harness-android] button[data-sidebar-right-expand] { display:none!important; }
+#harness-mobile-tools { position:fixed; top:6px; right:12px; width:44px; height:44px; z-index:80; border:0; border-radius:12px; display:flex; align-items:center; justify-content:center; color:var(--dsw-alias-label-secondary,#59616d); background:transparent; cursor:pointer; }
+#harness-mobile-tools svg { width:18px; height:18px; }
+body:has(.VOzbGW_panel) #harness-mobile-tools { display:none!important; }
+html[data-harness-android] .wSkVaW_headerBlank { height:0!important; min-height:0!important; padding:0!important; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) { position:fixed; top:6px; left:68px; right:68px; height:44px; min-height:0; padding:0; z-index:70; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) .wSkVaW_titleRow { height:44px; padding:0; margin:0; }
+
+/* Mobile welcome: the original composer stays in the flex layout above the keyboard. */
+html[data-harness-android] .wSkVaW_root[data-phase=hero] .wSkVaW_scrollBody { justify-content:flex-start!important; margin-right:0; scrollbar-gutter:auto; }
+html[data-harness-android] .wSkVaW_root[data-phase=hero] .wSkVaW_composerSeat { flex:1; min-height:0; }
+html[data-harness-android] .wSkVaW_composerHero { flex:1; min-height:0; width:100%; padding-bottom:max(12px,env(safe-area-inset-bottom)); gap:8px; }
+html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { flex:1; height:auto; min-height:128px; padding:12px 20px; }
+html[data-harness-android] .pXSMma_headline { flex-direction:column; gap:24px; font-size:22px; line-height:32px; font-weight:600; text-align:center; }
+html[data-harness-android] .pXSMma_fish { width:52px; height:auto; color:#4d6bfe; }
+html[data-harness-android] .pXSMma_previewBadge { display:none; }
+html[data-harness-android] .wSkVaW_heroWorkspaceRow { flex:none; margin-top:0; padding:0 16px; }
+html[data-harness-android] .uV2eYG_hero { flex:none; }
+html[data-harness-android] .uV2eYG_card { border-radius:26px; border:1px solid var(--dsw-alias-border-l3,#e5e5e5); box-shadow:0 6px 24px #0000000b; }
+html[data-harness-android] .uV2eYG_hero .uV2eYG_input { min-height:60px; }
+html[data-harness-android] .uV2eYG_row { gap:8px; padding:2px 10px 8px; }
+html[data-harness-android] .uV2eYG_add { width:34px; height:34px; }
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle { border-radius:50%!important; border:1px solid var(--dsw-alias-border-l3,#eee)!important; background:var(--dsw-alias-bg-base,#fff)!important; }
+#harness-mobile-actions { position:fixed; top:6px; right:12px; height:44px; display:flex; align-items:center; padding:0 4px; z-index:80; border:1px solid var(--dsw-alias-border-l3,#eee); border-radius:24px; background:var(--dsw-alias-bg-base,#fff); }
+#harness-mobile-actions>button { position:static; width:40px; height:42px; display:flex; align-items:center; justify-content:center; padding:0; border:0; border-radius:50%; color:var(--dsw-alias-label-primary,#222); background:transparent; cursor:pointer; }
+#harness-mobile-actions>button:focus-visible { outline:2px solid #4d6bfe; outline-offset:-4px; }
+#harness-mobile-actions svg { width:20px; height:20px; }
+body:has(.VOzbGW_panel) #harness-mobile-actions,body:has(.pI_x6G_frame:not([data-sidebar-collapsed])) #harness-mobile-actions { display:none; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) { right:108px; }
+@media(max-height:500px) {
+ html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { display:none; }
+ html[data-harness-android] .wSkVaW_composerHero { justify-content:flex-end; }
+ html[data-harness-android] .wSkVaW_body { --dsh-composer-text-max-height:120px; }
+}
+@media(max-width:360px) {
+ html[data-harness-android] .pXSMma_headline { font-size:20px; }
+ html[data-harness-android] .uV2eYG_row .uV2eYG_tools { gap:4px; }
+}
+
+/* Readable mobile controls and a bottom-aligned work area. */
+html[data-harness-android] { -webkit-text-size-adjust:100%; }
+html[data-harness-android] .pI_x6G_centerCol { padding-top:68px; }
+html[data-harness-android] .wSkVaW_composerHero { justify-content:flex-end; gap:8px; padding-bottom:max(16px,env(safe-area-inset-bottom)); }
+html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { display:flex; }
+html[data-harness-android] .wSkVaW_heroWorkspaceRow { flex-direction:column; align-items:flex-start; gap:4px; padding:0 24px; }
+html[data-harness-android] .pXSMma_workspace,html[data-harness-android] .cubgiG_seat { box-sizing:border-box; min-height:48px; max-width:100%; padding:4px 8px; gap:10px; font-size:18px; line-height:28px; }
+html[data-harness-android] .pXSMma_workspace svg,html[data-harness-android] .cubgiG_seat svg { width:24px; height:24px; flex:none; }
+html[data-harness-android] .pXSMma_workspace .pXSMma_chevron,html[data-harness-android] .cubgiG_seat .cubgiG_chevron { width:20px; height:20px; }
+html[data-harness-android] .wSkVaW_heroWorkspaceRow [data-slot='conversation.hero.agentPreset'] { display:block!important; min-width:0; max-width:100%; }
+html[data-harness-android] .wSkVaW_heroOptions:empty { display:none; }
+html[data-harness-android] .uV2eYG_card { font-size:18px; line-height:28px; gap:4px; padding-top:8px; }
+html[data-harness-android] .uV2eYG_input { font-size:18px; line-height:28px; padding:4px 12px 0 16px; }
+html[data-harness-android] .uV2eYG_placeholder { font-size:18px; line-height:28px; left:16px; right:12px; }
+html[data-harness-android] .uV2eYG_hero .uV2eYG_input { min-height:42px; }
+html[data-harness-android] .uV2eYG_row { padding:0 10px 8px; gap:8px; }
+html[data-harness-android] .uV2eYG_add,html[data-harness-android] .uV2eYG_primary { width:44px; height:44px; min-width:44px; transform:none; }
+html[data-harness-android] .uV2eYG_add svg,html[data-harness-android] .uV2eYG_primary svg { width:24px; height:24px; }
+html[data-harness-android] .iWlSmW_trigger,html[data-harness-android] ._7KE1Ra_trigger { box-sizing:border-box; min-height:44px; min-width:44px; font-size:16px; line-height:24px; }
+html[data-harness-android] .iWlSmW_triggerIcon svg,html[data-harness-android] ._7KE1Ra_triggerIcon { width:22px; height:22px; }
+html[data-harness-android] .uV2eYG_standardControls,html[data-harness-android] .uV2eYG_tools,html[data-harness-android] .uV2eYG_trailing { gap:8px; }
+html[data-harness-android] .wSkVaW_body { --dsh-composer-text-max-height:min(200px,30dvh); }
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle { width:48px!important; height:48px!important; top:8px!important; }
+html[data-harness-android] .hHd-Xa_toggle svg { width:24px; height:24px; }
+#harness-mobile-actions { top:8px; height:48px; border-radius:26px; }
+#harness-mobile-actions>button { width:48px; height:48px; }
+#harness-mobile-actions svg { width:24px; height:24px; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) { top:8px; left:72px; right:124px; height:48px; }
+html[data-harness-android] .wSkVaW_header:not(.wSkVaW_headerBlank) .wSkVaW_titleRow { height:48px; }
+html[data-harness-android] .wSkVaW_crumb { font-size:16px; min-height:44px; }
+html[data-harness-android] .hHd-Xa_root { font-size:16px; }
+html[data-harness-android] .hHd-Xa_newSession { min-height:48px; font-size:16px; }
+html[data-harness-android] .hHd-Xa_panelRow { min-height:48px; padding:10px 8px; }
+html[data-harness-android] .hHd-Xa_panelGlyph svg { width:22px; height:22px; }
+#harness-android-files { min-height:48px; font-size:16px; }
+html[data-harness-android] .VOzbGW_navTitle { height:44px!important; font-size:20px!important; }
+html[data-harness-android] .VOzbGW_navCell { height:48px!important; padding:10px 12px!important; font-size:16px!important; }
+html[data-harness-android] .VOzbGW_options { font-size:16px!important; line-height:1.6; }
+html[data-harness-android] .VOzbGW_options [class$='_rowTitle'],html[data-harness-android] .VOzbGW_options [class$='_rowLabel'] { font-size:16px!important; }
+html[data-harness-android] .VOzbGW_options [class$='_rowDescription'],html[data-harness-android] .VOzbGW_options [class$='_rowDesc'] { font-size:14px!important; line-height:22px; }
+html[data-harness-android] .VOzbGW_options button { min-height:44px; font-size:16px; }
+html[data-harness-android] .VOzbGW_close { min-width:44px; min-height:44px; }
+html[data-harness-android] [role=menuitem],html[data-harness-android] [role=option] { min-height:44px; box-sizing:border-box; font-size:16px; }
+html[data-harness-android] input:not([type=checkbox]):not([type=radio]):not([type=range]),html[data-harness-android] textarea { font-size:16px; }
+@media(max-height:500px) {
+ html[data-harness-android] .wSkVaW_heroWorkspaceRow { gap:0; }
+ html[data-harness-android] .pXSMma_workspace,html[data-harness-android] .cubgiG_seat { min-height:44px; }
+ html[data-harness-android] .wSkVaW_composerHero { gap:8px; padding-bottom:8px; }
+ html[data-harness-android] .wSkVaW_body { --dsh-composer-text-max-height:88px; }
+}
+
+/* Keep conversation text readable while honoring larger saved font sizes. */
+html[data-harness-android] .wSkVaW_root { --dsh-content-font-size:max(16px,var(--harness-preferred-content-size,14px)); --dsh-code-font-size:max(14px,var(--harness-preferred-code-size,11px)); --dsh-terminal-font-size:max(14px,var(--harness-preferred-terminal-size,13px)); }
+
+@media(max-height:500px) { html[data-harness-android] .wSkVaW_composerHero>.pXSMma_root { display:none; } }
+
+/* Optional single-row composer, enabled from General settings. */
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_card { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; gap:0; min-height:64px; padding:8px; border-radius:34px; align-items:center; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_scroll { grid-column:2; grid-row:1; margin:0; min-width:0; overflow:hidden; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_input { min-height:44px; padding:8px 4px; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_placeholder { top:8px; left:4px; right:4px; white-space:nowrap; display:block; text-overflow:ellipsis; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_row,html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_tools,html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_trailing { display:contents; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_add { grid-column:1; grid-row:1; background:transparent; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_primary { grid-column:3; grid-row:1; }
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_modes,html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_standardControls,html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_activity { display:none; }
+#harness-composer-setting { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 20px; padding:0 0 20px; margin-bottom:20px; border-bottom:1px solid var(--dsw-alias-border-l3,#eee); color:var(--dsw-alias-label-primary,#222); font-size:16px; }
+#harness-composer-setting>div:first-child { flex:1 1 200px; min-width:0; }
+.harness-setting-description { color:var(--dsw-alias-label-secondary,#666); font-size:14px; line-height:22px; margin-top:6px; }
+.harness-composer-choices { display:flex; gap:8px; flex-wrap:wrap; }
+.harness-composer-choices button { min-height:48px; border:1px solid var(--dsw-alias-border-l3,#ddd); border-radius:12px; padding:10px 14px; background:transparent; color:inherit; font:inherit; cursor:pointer; }
+.harness-composer-choices button[aria-pressed=true] { background:var(--dsw-alias-interactive-bg-hover,#eef0f4); border-color:var(--dsw-alias-label-secondary,#697382); }
+.harness-composer-choices button:focus-visible { outline:2px solid #4d6bfe; outline-offset:2px; }
+
+/* Raise only the card's upper edge; preserve content and surrounding layout. */
+html[data-harness-android][data-harness-composer-style=card] .uV2eYG_hero .uV2eYG_card { padding-top:14px; margin-top:-6px; }
+
+/* ============================================================================
+   DeepSeek Harness — Android phone shell.
+   Single source of truth. Values marked [confirmed] were signed off on device.
+   ========================================================================== */
+
+html[data-harness-android] {
+  --hm-gutter: 16px;
+  --hm-body: 16px;
+  --hm-small: 14px;
+  --hm-title: 22px;
+  --hm-hit: 48px;              /* [confirmed] top controls, enlarged from 42 */
+  --hm-ink: var(--dsw-alias-label-primary, #12131a);
+  --hm-ink-2: var(--dsw-alias-label-secondary, #6b7280);
+  --hm-surface: #ffffff;   /* the theme token resolves to grey here */
+  --hm-line: var(--dsw-alias-border-l3, #ececf0);
+  --hm-brand: #4d6bfe;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---------------------------------------------------------------- frame --- */
+html[data-harness-android] .mP3x-q_frame {
+  grid-template-columns: 0 minmax(0, 1fr) 0 !important;
+}
+html[data-harness-android] .mP3x-q_sidebarCol {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .mP3x-q_centerCol {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  min-width: 0 !important;
+}
+html[data-harness-android] .pI_x6G_frame {
+  padding-top: var(--hm-inset-top, 0px) !important;
+  padding-bottom: var(--hm-inset-bottom, 0px) !important;
+  box-sizing: border-box;
+  background: var(--hm-surface);
+}
+/* Home only: the composer sits near the bottom edge (1/3 of the old inset). */
+html[data-harness-android] body:has(.wSkVaW_composerHero) .pI_x6G_frame {
+  padding-bottom: 0 !important;
+}
+html[data-harness-android]:has(.pXSMma_root) .wSkVaW_composerHero {
+  padding-bottom: 28px !important;   /* [confirmed] */
+}
+
+/* --------------------------------------------------------------- drawer --- */
+html[data-harness-android] .hHd-Xa_root.hHd-Xa_collapsed {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .hHd-Xa_collapsed > .hHd-Xa_logoRow {
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .hHd-Xa_collapsed > :not(.hHd-Xa_logoRow) {
+  display: none !important;
+}
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_logoRow > :not(.hHd-Xa_toggle) {
+  display: none !important;
+}
+/* The toggle is React-owned: hide its children, paint our glyph with ::before. */
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_logoRow > .hHd-Xa_toggle > * {
+  visibility: hidden !important;
+}
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle {
+  position: fixed !important;
+  left: var(--hm-gutter) !important;
+  top: calc(var(--hm-inset-top, 0px) - 30px) !important;
+  width: var(--hm-hit) !important;
+  height: var(--hm-hit) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hm-line) !important;
+  border-radius: 50% !important;
+  background: var(--hm-surface) !important;
+  box-shadow: 0 1px 3px #0b0d120f;
+  z-index: 132;
+  transition: transform .16s ease;
+}
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2312131a' stroke-width='1.7' stroke-linejoin='round'%3E%3Crect x='3' y='4.5' width='18' height='15' rx='3.5'/%3E%3Cpath d='M9.2 4.5v15'/%3E%3C/svg%3E") center / 22px 22px no-repeat;
+  visibility: visible;
+  pointer-events: none;
+}
+html[data-harness-android] .hHd-Xa_collapsed .hHd-Xa_toggle:active {
+  transform: scale(.94);
+}
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) {
+  position: fixed !important;
+  inset: 0 auto 0 0 !important;
+  width: min(88vw, 360px) !important;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: calc(var(--hm-inset-top, 0px) - 16px) 10px var(--hm-inset-bottom, 0px) !important;
+  background: var(--hm-surface) !important;
+  box-shadow: 12px 0 40px #0b0d121f;
+  z-index: 140;
+  animation: hm-slide-left .2s cubic-bezier(.2, .8, .2, 1);
+}
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) .hHd-Xa_toggle {
+  position: absolute !important;
+  right: 10px !important;
+  top: calc(var(--hm-inset-top, 0px) - 10px) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+}
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) .hHd-Xa_newSession,
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) .hHd-Xa_panelRow {
+  min-height: var(--hm-hit);
+  border-radius: 14px;
+  font-size: var(--hm-body);
+  gap: 12px;
+}
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) .hHd-Xa_regionArea {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+html[data-harness-android] #harness-drawer-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 135;
+  background: #0b0d1214;
+}/* The backdrop must never sit on top of the drawer. */
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) {
+  z-index: 160 !important;
+}
+html[data-harness-android] body:has(.hHd-Xa_root:not(.hHd-Xa_collapsed)) #harness-drawer-backdrop {
+  display: block;
+}
+
+/* -------------------------------------------------------- top controls --- */
+html[data-harness-android]:has(.pXSMma_root) .wSkVaW_header {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+#harness-mobile-actions {
+  position: fixed;
+  top: calc(var(--hm-inset-top, 0px) - 30px);
+  right: var(--hm-gutter);
+  height: var(--hm-hit);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 4px;
+  border: 1px solid var(--hm-line);
+  border-radius: calc(var(--hm-hit) / 2);
+  background: var(--hm-surface);
+  box-shadow: 0 1px 3px #0b0d120f;
+  z-index: 100;
+  transition: opacity .16s ease;
+}
+#harness-mobile-actions > button {
+  width: calc(var(--hm-hit) - 8px);
+  height: calc(var(--hm-hit) - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--hm-ink);
+  transition: transform .16s ease;
+}
+#harness-mobile-actions > button:active {
+  transform: scale(.92);
+}
+#harness-mobile-actions svg {
+  width: 24px;
+  height: 24px;
+}
+#harness-mobile-actions[hidden] {
+  display: none;
+}
+html[data-harness-android] body:has(.pI_x6G_frame[data-rightbar-fullscreen]) #harness-mobile-actions {
+  opacity: 0;
+  pointer-events: none;
+}
+#harness-mobile-tools-close {
+  position: fixed;
+  top: calc(var(--hm-inset-top, 0px) - 30px);
+  right: var(--hm-gutter);
+  width: var(--hm-hit);
+  height: var(--hm-hit);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--hm-line);
+  border-radius: 50%;
+  background: var(--hm-surface);
+  color: var(--hm-ink);
+  box-shadow: 0 2px 10px #0b0d1214;
+  z-index: 200;
+  animation: hm-fade .16s ease-out;
+}
+#harness-mobile-tools-close svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* --------------------------------------------------------------- hero --- */
+html[data-harness-android]:has(.pXSMma_root) .wSkVaW_scrollBody {
+  display: flex;
+  flex-direction: column;
+}
+html[data-harness-android]:has(.pXSMma_root) .wSkVaW_composerSeat {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+html[data-harness-android] .wSkVaW_composerStack,
+html[data-harness-android]:has(.pXSMma_root) .wSkVaW_composerHero {
+  flex: 1 1 auto;
+  min-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+  padding-left: var(--hm-gutter) !important;
+  padding-right: var(--hm-gutter) !important;
+}
+html[data-harness-android]:has(.pXSMma_root) .pXSMma_root {
+  flex: 0 0 auto !important;
+  margin-top: 25vh;             /* [confirmed] whale lands at 42.3% */
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+html[data-harness-android]:has(.pXSMma_root) .pXSMma_headline {
+  flex-direction: column !important;
+  align-items: center;
+  gap: 18px !important;
+  font-size: var(--hm-title) !important;
+  line-height: 30px !important;
+  font-weight: 500;
+  text-align: center;
+}
+html[data-harness-android]:has(.pXSMma_root) .pXSMma_fish {
+  width: 45px !important;       /* [confirmed] */
+  height: auto !important;
+  color: var(--hm-brand) !important;
+  fill: var(--hm-brand) !important;
+}
+html[data-harness-android] .pXSMma_fish path {
+  fill: var(--hm-brand) !important;
+}
+html[data-harness-android] .pXSMma_previewBadge {
+  display: none !important;
+}
+
+/* --------------------------------------------- workspace / mode controls --- */
+html[data-harness-android]:has(.pXSMma_root) .wSkVaW_heroWorkspaceRow {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+  margin-top: auto !important;
+  padding: 0 0 10px !important;
+}
+html[data-harness-android] .pXSMma_workspace,
+html[data-harness-android] .cubgiG_seat {
+  min-height: var(--hm-hit) !important;
+  height: var(--hm-hit) !important;
+  padding: 0 8px 0 4px !important;
+  gap: 10px !important;
+  border-radius: 12px;
+  font-size: 17px !important;
+  line-height: 24px !important;
+  color: var(--hm-ink);
+}
+html[data-harness-android] .pXSMma_workspace svg,
+html[data-harness-android] .cubgiG_seat svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+html[data-harness-android] .pXSMma_workspace > svg:last-child,
+html[data-harness-android] .cubgiG_seat > svg:last-child {
+  width: 16px;
+  height: 16px;
+  opacity: .5;
+}
+
+/* ------------------------------------------------------- composer card --- */
+html[data-harness-android] .uV2eYG_root,
+html[data-harness-android] .uV2eYG_hero {
+  width: 100%;
+  padding: 0 !important;
+}
+html[data-harness-android] .uV2eYG_card {
+  min-height: 118px;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  gap: 4px !important;
+  padding: 10px 12px 12px !important;
+  border: 1px solid var(--hm-line) !important;
+  border-radius: 34px !important;   /* [confirmed] 34 - 22 = 12px ring gap */
+  background: var(--hm-surface) !important;
+  box-shadow: 0 8px 24px #0b0d1208 !important;
+}
+html[data-harness-android] .uV2eYG_scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+html[data-harness-android] .uV2eYG_input {
+  min-height: 44px;
+  padding: 8px 12px 0 !important;
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+}
+html[data-harness-android] .uV2eYG_placeholder {
+  top: 8px !important;
+  left: 12px !important;
+  right: 12px !important;
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+  color: var(--hm-ink-2);
+}
+html[data-harness-android] .uV2eYG_row {
+  align-items: center;
+  gap: 6px !important;
+  padding: 0 !important;
+}
+html[data-harness-android] .uV2eYG_add,
+html[data-harness-android] .uV2eYG_primary {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  flex: none;
+}
+html[data-harness-android] .uV2eYG_add svg,
+html[data-harness-android] .uV2eYG_primary svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* ------------------------------------------- single-line composer (pill) ---
+   In single mode the composer stays one line even while focused; only its
+   height changes between empty (56) and editing. */
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_card {
+  display: grid !important;
+  grid-template-columns: 44px minmax(0, 1fr) 44px !important;
+  grid-template-rows: auto !important;
+  align-items: center !important;
+  justify-content: unset !important;
+  gap: 0 !important;
+  min-height: 56px !important;
+  padding: 6px 7px !important;
+  border-radius: 999px !important;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_row,
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_tools,
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_trailing {
+  display: contents !important;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_scroll {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0 !important;
+  min-width: 0;
+  overflow: hidden;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_input {
+  min-height: 40px !important;
+  padding: 8px 4px !important;
+  font-size: var(--hm-body) !important;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_placeholder {
+  top: 8px !important;
+  left: 4px !important;
+  right: 4px !important;
+  font-size: var(--hm-body) !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_add {
+  grid-column: 1;
+  grid-row: 1;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_add svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_primary {
+  grid-column: 3;
+  grid-row: 1;
+}
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_modes,
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_standardControls,
+html[data-harness-android][data-harness-composer-style=single] .uV2eYG_hero[data-harness-compact] .uV2eYG_activity {
+  display: none !important;
+}
+
+/* --------------------------------------------------- attachment sheet ---
+   Non-modal: no full-screen dim, no hit catcher, nothing above it moves. */
+#harness-attach-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 320;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+#harness-attach-sheet[hidden] {
+  display: none;
+}
+#harness-attach-sheet .hm-sheet-scrim {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  pointer-events: none;
+}
+#harness-attach-sheet .hm-sheet {
+  position: relative;
+  pointer-events: auto;
+  margin: 0 auto calc(var(--hm-inset-bottom, 0px) + 10px);
+  width: min(420px, calc(100vw - 2 * var(--hm-gutter)));
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 24px;
+  background: var(--hm-surface);
+  box-shadow: 0 4px 36px #0b0d1226;
+  animation: hm-sheet-in .18s cubic-bezier(.2, .8, .2, 1);
+}
+#harness-attach-sheet .hm-sheet > button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 56px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: var(--hm-ink);
+  font-size: var(--hm-body);
+  line-height: 22px;
+  text-align: left;
+}
+#harness-attach-sheet .hm-sheet > button:active {
+  background: #0000000a;
+}
+#harness-attach-sheet .hm-sheet > button .hm-ico {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #00000008;
+}
+#harness-attach-sheet .hm-sheet > button .hm-ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ------------------------------------------------------------- settings --- */
+html[data-harness-android] .VOzbGW_overlay {
+  padding: 0 !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+}
+html[data-harness-android] .VOzbGW_panel {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-sizing: border-box;
+  padding-top: var(--hm-inset-top, 0px);
+  padding-bottom: var(--hm-inset-bottom, 0px);
+}
+html[data-harness-android] .VOzbGW_nav {
+  flex: none;
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 6px 0 8px 12px !important;
+  gap: 6px !important;
+  border-bottom: 1px solid var(--hm-line);
+}
+html[data-harness-android] .VOzbGW_navTitle {
+  height: 40px !important;
+  padding: 0 56px 0 4px !important;
+  display: flex !important;
+  align-items: center;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+html[data-harness-android] .VOzbGW_navList {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 6px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 0 56px 2px 0 !important;
+  scrollbar-width: none;
+}
+html[data-harness-android] .VOzbGW_navList::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+html[data-harness-android] .VOzbGW_navCell {
+  flex: 0 0 auto !important;
+  height: 44px !important;
+  padding: 0 14px !important;
+  gap: 8px !important;
+  border-radius: 12px !important;
+  font-size: var(--hm-body) !important;
+  white-space: nowrap;
+}
+html[data-harness-android] .VOzbGW_content {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+html[data-harness-android] .VOzbGW_header {
+  position: absolute !important;
+  top: calc(var(--hm-inset-top, 0px) + 6px) !important;
+  right: 8px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+html[data-harness-android] .VOzbGW_header button:not(.VOzbGW_close) {
+  display: none !important;
+}
+html[data-harness-android] .VOzbGW_close {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border-radius: 50%;
+}
+html[data-harness-android] .VOzbGW_options {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  padding: 4px 20px calc(28px + var(--hm-inset-bottom, 0px)) !important;
+  font-size: var(--hm-body) !important;
+  line-height: 1.6;
+}
+html[data-harness-android] .VOzbGW_options [class$='_row'] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 16px 0 !important;
+  border-bottom: 1px solid var(--hm-line);
+  box-sizing: border-box;
+}
+html[data-harness-android] .VOzbGW_options [class$='_row']:last-child {
+  border-bottom: 0;
+}
+html[data-harness-android] .VOzbGW_options [class$='_rowText'] {
+  min-width: 0;
+  flex: 1 1 180px;
+}
+html[data-harness-android] .VOzbGW_options button,
+html[data-harness-android] .VOzbGW_options [role=combobox] {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font-size: var(--hm-body);
+}
+html[data-harness-android] [class$='_rowTitle'],
+html[data-harness-android] [class$='_rowLabel'] {
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+}
+html[data-harness-android] [class$='_rowDescription'],
+html[data-harness-android] [class$='_rowDesc'] {
+  font-size: var(--hm-small) !important;
+  line-height: 21px !important;
+}
+html[data-harness-android] [role=menuitem],
+html[data-harness-android] [role=option] {
+  min-height: 44px;
+  box-sizing: border-box;
+  font-size: var(--hm-body);
+}
+
+/* ---------------------------------------------------------- transcripts --- */
+/* content / code / terminal font sizes are left to dsh defaults */
+html[data-harness-android] input:not([type=checkbox]):not([type=radio]):not([type=range]),
+html[data-harness-android] textarea {
+  font-size: var(--hm-body);
+}
+
+/* -------------------------------------------------------------- motion ---
+   Popovers animate transform only: an opacity ramp let the page behind show
+   through for ~160ms. */
+html[data-harness-android] [role=menu],
+html[data-harness-android] [role=listbox] {
+  animation: hm-pop-solid .14s cubic-bezier(.2, .8, .2, 1) !important;
+  opacity: 1 !important;
+  transform-origin: 50% 100%;
+  background: var(--hm-surface) !important;
+  max-height: min(60dvh, 460px);
+  overflow-y: auto;
+}
+html[data-harness-android] [role=dialog] {
+  animation: hm-fade .16s ease-out;
+}
+html[data-harness-android] .P3OORG_panel {
+  animation: hm-slide-right .2s cubic-bezier(.2, .8, .2, 1);
+}
+@keyframes hm-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes hm-pop-solid {
+  from { transform: translateY(8px) scale(.98); }
+  to   { transform: none; }
+}
+@keyframes hm-slide-left {
+  from { transform: translateX(-16px); }
+  to   { transform: none; }
+}
+@keyframes hm-slide-right {
+  from { transform: translateX(20px); }
+  to   { transform: none; }
+}
+@keyframes hm-sheet-in {
+  from { transform: translateY(16px); }
+  to   { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-harness-android] [role=menu],
+  html[data-harness-android] [role=listbox],
+  html[data-harness-android] [role=dialog],
+  html[data-harness-android] .P3OORG_panel,
+  html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed),
+  #harness-attach-sheet .hm-sheet {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---------------------------------------------------------- breakpoints --- */
+@media (min-width: 600px) {
+  html[data-harness-android] {
+    --hm-gutter: 24px;
+    --hm-body: 17px;
+    --hm-title: 26px;
+    --hm-hit: 52px;
+  }
+  html[data-harness-android] .wSkVaW_body {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  html[data-harness-android] .VOzbGW_panel {
+    width: min(720px, 92vw) !important;
+    height: min(880px, 92dvh) !important;
+    margin: auto !important;
+    border-radius: 20px !important;
+    padding-top: 0;
+  }
+  html[data-harness-android] .VOzbGW_overlay {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 360px) {
+  html[data-harness-android] {
+    --hm-gutter: 12px;
+    --hm-title: 20px;
+  }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  html[data-harness-android] .pXSMma_root {
+    margin-top: 8vh;
+  }
+}
+
+
+/* The sheet is a native-feeling popup: no text selection, no long-press callout,
+   no tap highlight. That callout was the black strip under the last row. */
+#harness-attach-sheet,
+#harness-attach-sheet .hm-sheet,
+#harness-attach-sheet .hm-sheet > button {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+html[data-harness-android] .uV2eYG_add,
+html[data-harness-android] .uV2eYG_primary {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* The scrim must not cover the drawer: it only owns the strip the drawer leaves
+   exposed (12vw), otherwise every tap inside the panel hits the scrim and closes
+   it instead of activating the control. */
+html[data-harness-android] #harness-drawer-backdrop {
+  left: auto !important;
+  right: 0 !important;
+  width: 12vw !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  background: #0b0d1214;
+}
+
+/* Settings header: back arrow on the left of the title, no close cross. */
+html[data-harness-android] .VOzbGW_panel {
+  position: relative !important;
+}
+html[data-harness-android] .VOzbGW_close {
+  display: none !important;
+}
+html[data-harness-android] .VOzbGW_navTitle {
+  padding-left: 52px !important;
+}
+#harness-settings-back {
+  position: absolute;
+  left: 8px;
+  top: calc(var(--hm-inset-top, 0px) + 6px);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--hm-ink);
+  z-index: 5;
+  transition: transform .14s ease, background .14s ease;
+}
+#harness-settings-back:active {
+  transform: scale(.92);
+  background: #0000000d;
+}
+#harness-settings-back svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Drawer density: 14px session titles are too small on a phone, and the 84px
+   bottom inset left a large empty band under "更多". */
+html[data-harness-android] .hHd-Xa_root:not(.hHd-Xa_collapsed) {
+  padding-bottom: 20px !important;
+}
+html[data-harness-android] .YDXeBa_title {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+html[data-harness-android] .hHd-Xa_regionArea [class$='_title'],
+html[data-harness-android] .hHd-Xa_regionArea [class$='_name'] {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+html[data-harness-android] .hHd-Xa_regionArea [class$='_row'],
+html[data-harness-android] .hHd-Xa_regionArea [class$='_item'] {
+  min-height: 44px;
+}
+html[data-harness-android] .hHd-Xa_footArea {
+  padding-bottom: 6px !important;
+}
+
+/* Settings header: the close cross is gone, so its reserved gutter goes too;
+   the title sits right under the status bar. */
+html[data-harness-android] .VOzbGW_panel {
+  padding-top: calc(var(--hm-inset-top, 0px) - 6px) !important;
+}
+html[data-harness-android] .VOzbGW_navList {
+  padding-right: 8px !important;
+  scroll-padding-right: 8px;
+}
+html[data-harness-android] .VOzbGW_navTitle {
+  padding-right: 8px !important;
+}
+
+/* Switches keep a landscape 48x28 track; my 44px row minimum was squeezing them
+   into a 36x44 block, which read as a black square. */
+html[data-harness-android] .VOzbGW_options [role=switch],
+html[data-harness-android] .VOzbGW_options [class*='_switch_'] {
+  width: 48px !important;
+  min-width: 48px !important;
+  height: 28px !important;
+  min-height: 28px !important;
+  max-height: 28px !important;
+  border-radius: 14px !important;
+  flex: none !important;
+  box-sizing: border-box !important;
+}
+html[data-harness-android] .VOzbGW_options [role=switch] > *,
+html[data-harness-android] .VOzbGW_options [class*='_switch_'] > * {
+  height: 22px !important;
+  width: 22px !important;
+  min-width: 22px !important;
+  border-radius: 50% !important;
+  top: 3px !important;
+}
+
+/* The back arrow shares the title's optical center and enters like every other
+   phone control instead of appearing instantly. */
+#harness-settings-back {
+  top: calc(var(--hm-inset-top, 0px) - 2px) !important;
+  animation: hm-fade .16s ease-out;
+}
+#harness-settings-back svg {
+  transition: transform .16s ease;
+}
+#harness-settings-back:active svg {
+  transform: translateX(-2px);
+}
+
+/* The knob needs a hairline shadow to read against a white card, and the tab
+   strip has to fit four labels on a 400px device. */
+html[data-harness-android] .VOzbGW_options [role=switch]::after,
+html[data-harness-android] .VOzbGW_options [class*='_switch_']::after {
+  box-shadow: 0 1px 3px #0b0d1240 !important;
+}
+html[data-harness-android] .VOzbGW_navCell {
+  font-size: 15px !important;
+  padding: 0 10px !important;
+  gap: 6px !important;
+}
+html[data-harness-android] .VOzbGW_navCell svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Settings header sits tighter; the arrow gets an optical nudge. */
+html[data-harness-android] .VOzbGW_panel {
+  padding-top: calc(var(--hm-inset-top, 0px) - 12px) !important;
+}
+#harness-settings-back {
+  top: calc(var(--hm-inset-top, 0px) - 4px) !important;
+}
+/* Switch track carries a stroke so the pill reads as a control, not a blob. */
+html[data-harness-android] .VOzbGW_options [role=switch],
+html[data-harness-android] .VOzbGW_options [class*='_switch_'] {
+  border: 1.5px solid #0f1115 !important;
+  background-clip: padding-box !important;
+}
+html[data-harness-android] .VOzbGW_options [role=switch][aria-checked='false'],
+html[data-harness-android] .VOzbGW_options [class*='_switch_'][aria-checked='false'] {
+  background: #ffffff !important;
+  border-color: #ccd0d6 !important;
+}
+
+/* Keep tab labels at a readable size; make them fit by tightening spacing. */
+html[data-harness-android] .VOzbGW_navCell {
+  font-size: 16px !important;
+  padding: 0 6px !important;
+  gap: 6px !important;
+}
+html[data-harness-android] .VOzbGW_navCell svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+html[data-harness-android] .VOzbGW_navList {
+  gap: 2px !important;
+  padding-left: 0 !important;
+}
+/* Arrow center must equal the title center (86), not 90. */
+#harness-settings-back {
+  top: calc(var(--hm-inset-top, 0px) - 8px) !important;
+}
+
+html[data-harness-android] .VOzbGW_navCell {
+  padding: 0 4px !important;
+  gap: 4px !important;
+}
+html[data-harness-android] .VOzbGW_nav {
+  padding-left: 8px !important;
+}
+
+html[data-harness-android] .VOzbGW_panel {
+  padding-top: calc(var(--hm-inset-top, 0px) - 20px) !important;
+}
+#harness-settings-back {
+  top: calc(var(--hm-inset-top, 0px) - 16px) !important;
+}
+
+/* harness-foot-size-v1: the footer row was the smallest text in the drawer. */
+html[data-harness-android] .hHd-Xa_footArea,
+html[data-harness-android] .hHd-Xa_footArea * {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+html[data-harness-android] .hHd-Xa_footArea button,
+html[data-harness-android] .hHd-Xa_footArea [role=button] {
+  min-height: 44px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+/* Optical alignment for the back arrow and a visible entrance for settings. */
+#harness-settings-back {
+  top: calc(var(--hm-inset-top, 0px) - 20px) !important;
+  animation: hm-back-in .22s cubic-bezier(.2, .8, .2, 1) !important;
+}
+@keyframes hm-back-in {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: none; }
+}
+html[data-harness-android] .VOzbGW_panel {
+  animation: hm-settings-in .2s cubic-bezier(.2, .8, .2, 1) !important;
+}
+@keyframes hm-settings-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+html[data-harness-android] .VOzbGW_options {
+  animation: hm-fade .18s ease-out;
+}
+
+/* A same-colour border on a filled track is invisible. Use an inset stroke that
+   is one step lighter than the fill, plus a ring for the knob. */
+html[data-harness-android] .VOzbGW_options [role=switch],
+html[data-harness-android] .VOzbGW_options [class*='_switch_'] {
+  border: 0 !important;
+  box-shadow: inset 0 0 0 1.5px #4a5060, 0 0 0 1px #e3e6eb !important;
+}
+html[data-harness-android] .VOzbGW_options [role=switch][aria-checked='false'],
+html[data-harness-android] .VOzbGW_options [class*='_switch_'][aria-checked='false'] {
+  background: #ffffff !important;
+  box-shadow: inset 0 0 0 1.5px #cdd2da, 0 0 0 1px #eef0f3 !important;
+}
+html[data-harness-android] .VOzbGW_options [role=switch] > *,
+html[data-harness-android] .VOzbGW_options [class*='_switch_'] > * {
+  background: #ffffff !important;
+  box-shadow: 0 1px 4px #0b0d1245 !important;
+}
+
+/* Knob position must be explicit once the track size is fixed: 48 track,
+   22 knob, 2px inset -> off at left 2, on at left 24. */
+html[data-harness-android] .VOzbGW_options [role=switch] > *,
+html[data-harness-android] .VOzbGW_options [class*='_switch_'] > * {
+  position: absolute !important;
+  top: 1px !important;
+  left: 2px !important;
+  right: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+}
+html[data-harness-android] .VOzbGW_options [role=switch][aria-checked='true'] > *,
+html[data-harness-android] .VOzbGW_options [class*='_switch_'][aria-checked='true'] > * {
+  left: 24px !important;
+}
+/* Borders that were nearly white now read as edges. */
+html[data-harness-android] .hHd-Xa_newSession {
+  border: 1px solid #dfe3e9 !important;
+}
+html[data-harness-android] .geFEbW_entry,
+html[data-harness-android] .zjup-W_entry {
+  border: 1px solid #dfe3e9 !important;
+  box-shadow: 0 1px 3px #0b0d120a !important;
+}
+
+/* While the right panel is open the home chrome must get out of its way. */
+html[data-harness-android] body:has(.pI_x6G_frame[data-rightbar-fullscreen]) .hHd-Xa_collapsed .hHd-Xa_toggle {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+html[data-harness-android] body:has(.pI_x6G_frame[data-rightbar-fullscreen]) #harness-mobile-actions {
+  display: none !important;
+}
+/* The close control aligns with the panel's own tool row instead of floating above it. */
+#harness-mobile-tools-close {
+  top: calc(var(--hm-inset-top, 0px) + 30px) !important;
+}
+
+/* Panel open: hide home chrome via the frame attribute (works regardless of :has). */
+html[data-harness-android] .pI_x6G_frame[data-rightbar-fullscreen] .hHd-Xa_toggle {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+html[data-harness-android] .pI_x6G_frame[data-rightbar-fullscreen] ~ #harness-mobile-actions,
+html[data-harness-android] #harness-mobile-actions[hidden] {
+  display: none !important;
+}
+
+/* The panel already ships a close control at its top-right; my injected cross
+   landed on top of it. Use the shipped one, at a thumb-sized target. */
+html[data-harness-android] #harness-mobile-tools-close {
+  display: none !important;
+}
+html[data-harness-android] .P3OORG_iconButton[data-sidebar-right-toggle],
+html[data-harness-android] button[data-sidebar-right-toggle] {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  box-shadow: 0 1px 4px #0b0d1214;
+  z-index: 210 !important;
+}
+html[data-harness-android] button[data-sidebar-right-toggle] svg {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+/* The native command palette (uV2eYG_dock) is replaced by the phone sheet. */
+html[data-harness-android] .uV2eYG_dock {
+  display: none !important;
+}
+
+/* Popover text was noticeably smaller than the rest of the sheet. */
+html[data-harness-android] [role=menu] {
+  font-size: 16px !important;
+}
+html[data-harness-android] [role=menu] [class*='_title'],
+html[data-harness-android] [role=menu] [class*='_label'],
+html[data-harness-android] [role=menu] [class*='_name'] {
+  font-size: 17px !important;
+  line-height: 24px !important;
+}
+html[data-harness-android] [role=menu] [class*='_desc'],
+html[data-harness-android] [role=menu] [class*='_hint'],
+html[data-harness-android] [role=menu] [class*='_sub'] {
+  font-size: 15px !important;
+  line-height: 22px !important;
+}
+
+/* Same-tick hiding of the home chrome while the right panel is open. */
+html[data-harness-android] body.hm-panel-open #harness-mobile-actions,
+html[data-harness-android] body.hm-panel-open .hHd-Xa_collapsed .hHd-Xa_toggle {
+  display: none !important;
+}
+
+/* The shipped close control stays in the flex row and overflows at 44px; pin it. */
+html[data-harness-android] button[data-sidebar-right-toggle] {
+  position: fixed !important;
+  top: calc(var(--hm-inset-top, 0px) - 30px) !important;
+  right: 16px !important;
+  left: auto !important;
+  margin: 0 !important;
+}
+
+/* Popover text: bigger type, tighter padding so the bubble keeps its size. */
+html[data-harness-android] [role=menu] {
+  font-size: 16px !important;
+  padding: 6px !important;
+}
+html[data-harness-android] [role=menu] [class*='_title'],
+html[data-harness-android] [role=menu] [class*='_label'],
+html[data-harness-android] [role=menu] [class*='_name'],
+html[data-harness-android] [role=menu] [class*='_heading'] {
+  font-size: 19px !important;
+  line-height: 25px !important;
+  font-weight: 600 !important;
+}
+html[data-harness-android] [role=menu] [class*='_desc'],
+html[data-harness-android] [role=menu] [class*='_hint'],
+html[data-harness-android] [role=menu] [class*='_sub'],
+html[data-harness-android] [role=menu] [class*='_description'] {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+html[data-harness-android] [role=menu] [role=menuitem],
+html[data-harness-android] [role=menu] [role=option] {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+/* The native command palette must never come back, even with inline styles. */
+html[data-harness-android] .uV2eYG_dock {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Menu exit: fade + slight drop, driven by .hm-menu-out before React unmounts. */
+@keyframes hm-menu-out {
+  from { opacity: 1; transform: none; }
+  to   { opacity: 0; transform: translateY(8px) scale(.985); }
+}
+html[data-harness-android] [role=menu].hm-menu-out {
+  animation: hm-menu-out .18s cubic-bezier(.4, 0, 1, 1) forwards !important;
+  pointer-events: none !important;
+}
+
+/* The capsule's split glyph faces the other way; mirror it on the X axis. */
+/* harness-home-scope-v1: the rules above now only apply to the welcome screen;
+   conversations keep the shipped layout. */
+
+/* Same bottom offset on both screens: sending the first message switches from
+   the welcome layout to the conversation layout, and a different padding there
+   made the composer jump up by ~56px. */
+html[data-harness-android] .wSkVaW_composerHero {
+  padding-bottom: 28px !important;
+}
+html[data-harness-android] .pI_x6G_frame {
+  padding-bottom: 0 !important;
+}
+
+/* harness-body-text-v1: the default conversation body size reads small on a
+   phone; raise it one step without touching layout metrics. */
+html[data-harness-android] {
+  --dsh-content-font-size: 17px;
+}
+html[data-harness-android] .wSkVaW_scrollBody {
+  font-size: 17px;
+}
+
+/* harness-body-text-v2: dsh defines --dsh-content-font-size on .wSkVaW_root, so
+   the value must be set there (same specificity, later wins) to take effect. */
+html[data-harness-android] .wSkVaW_root {
+  --dsh-content-font-size: 17px !important;
+  --dsh-code-font-size: 15px !important;
+}
+
+/* The frame padding is driven by an earlier equal-specificity rule; use a more
+   specific selector so the composer sits at the same bottom on both screens. */
+html[data-harness-android] body .pI_x6G_frame {
+  padding-bottom: 0 !important;
+}

@@ -1,0 +1,1 @@
+const {Cdp}=require('./mumu-cdp.cjs');(async()=>{const c=await Cdp.connect();console.log('CSP',await c.eval("fetch(location.href).then(r=>r.headers.get('content-security-policy'))"));console.log('EXCEPTIONS',c.events.filter(e=>e.method==='Runtime.exceptionThrown').map(e=>e.params.exceptionDetails.exception?.description));c.close();})();

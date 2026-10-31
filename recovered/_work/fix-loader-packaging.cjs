@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path');const project='outputs/DeepSeekHarness-Android-source';for(const [arch,abi]of[['arm64','arm64-v8a'],['x64','x86_64']]){const p=project+'/app/src/main/jniLibs/'+abi+'/libloader32.so';fs.copyFileSync(p,project+'/app/src/main/assets/loader32-'+arch+'.bin');fs.unlinkSync(p);}
+let p=project+'/tools/prepare-assets.cjs',s=fs.readFileSync(p,'utf8');s=s.replace("for(const n of fs.readdirSync(path.join(base,'libexec/proot'))){fs.copyFileSync(path.join(base,'libexec/proot',n),path.join(libDir,'lib'+n+'.so'))}","for(const n of fs.readdirSync(path.join(base,'libexec/proot'))){fs.copyFileSync(path.join(base,'libexec/proot',n),n==='loader32'?path.join(ASSETS,'loader32-'+arch+'.bin'):path.join(libDir,'lib'+n+'.so'))}");fs.writeFileSync(p,s);
+p=project+'/tools/stage-assets.cjs';s=fs.readFileSync(p,'utf8').replace('(tar\\.gz|json)','(tar\\.gz|json|bin)');fs.writeFileSync(p,s);
+p=project+'/app/src/main/java/com/deepseek/harness/android/RuntimeInstaller.java';s=fs.readFileSync(p,'utf8');s=s.replace('if(marker.isFile()) return;\n        root.mkdirs();\n        String arch=arch();',`String arch=arch();
+        File loader32=new File(c.getFilesDir(),"native/loader32");loader32.getParentFile().mkdirs();
+        if(!loader32.isFile()){try(InputStream in=c.getAssets().open("loader32-"+arch+".bin");OutputStream out=new FileOutputStream(loader32)){byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1)out.write(b,0,n);}Os.chmod(loader32.getAbsolutePath(),0700);}
+        if(marker.isFile()) return;
+        root.mkdirs();`);s=s.replace('new File(lib,"libloader32.so").getAbsolutePath()','new File(c.getFilesDir(),"native/loader32").getAbsolutePath()');fs.writeFileSync(p,s);

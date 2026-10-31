@@ -1,0 +1,721 @@
+
+/* ============================================================================
+   Android phone shell — one pass, no overrides of earlier patches.
+   Scale: 16 body / 22 headline / 48 touch. Breakpoints: >=600 wide, <=360 tight.
+   Every rule below is scoped to html[data-harness-android].
+   ========================================================================== */
+
+html[data-harness-android] {
+  --hm-gutter: 16px;
+  --hm-body: 16px;
+  --hm-small: 14px;
+  --hm-title: 22px;
+  --hm-hit: 48px;
+  --hm-radius: 26px;
+  --hm-hairline: 1px solid var(--dsw-alias-border-l3, #ececf0);
+  --hm-ink: var(--dsw-alias-label-primary, #12131a);
+  --hm-ink-2: var(--dsw-alias-label-secondary, #6b7280);
+  --hm-surface: var(--dsw-alias-bg-base, #fff);
+  --hm-brand: #4d6bfe;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---------------------------------------------------------------- frame --- */
+html[data-harness-android] .mP3x-q_frame {
+  grid-template-columns: 0 minmax(0, 1fr) 0 !important;
+}
+html[data-harness-android] .mP3x-q_sidebarCol {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .mP3x-q_centerCol {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  min-width: 0 !important;
+}
+html[data-harness-android] .mP3x-q_rightbarCol {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+}
+/* System bars are drawn over the page; content is inset by the host. */
+html[data-harness-android] .pI_x6G_frame {
+  padding-top: var(--hm-inset-top, 0px) !important;
+  padding-bottom: var(--hm-inset-bottom, 0px) !important;
+  box-sizing: border-box;
+  background: var(--hm-surface);
+}
+html[data-harness-android][data-phone-sheet=open] .an3WzG_composerHero,
+html[data-harness-android][data-phone-sheet=open] .wSkVaW_composerHero {
+  padding-bottom: calc(10px + var(--hm-sheet-h, 0px)) !important;
+  transition: padding-bottom .22s cubic-bezier(.2, .8, .2, 1);
+}
+
+/* --------------------------------------------------------------- drawer --- */
+html[data-harness-android] .wtg9ga_root.wtg9ga_collapsed {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .wtg9ga_collapsed > .wtg9ga_logoRow {
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+html[data-harness-android] .wtg9ga_collapsed > :not(.wtg9ga_logoRow) {
+  display: none !important;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_toggle {
+  position: fixed !important;
+  left: var(--hm-gutter) !important;
+  top: calc(var(--hm-inset-top, 0px) + 10px) !important;
+  width: var(--hm-hit) !important;
+  height: var(--hm-hit) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border: var(--hm-hairline) !important;
+  border-radius: 50% !important;
+  background: var(--hm-surface) !important;
+  color: var(--hm-ink) !important;
+  box-shadow: 0 1px 3px #0b0d120f;
+  z-index: 132;
+  transition: transform .16s ease, background .16s ease;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_toggle:active {
+  transform: scale(.94);
+  background: #0000000a !important;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_toggle svg {
+  width: 22px;
+  height: 22px;
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_railMark {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--hm-ink);
+}
+html[data-harness-android] .wtg9ga_collapsed .wtg9ga_railMark svg {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) {
+  position: fixed !important;
+  inset: 0 auto 0 0 !important;
+  width: min(86vw, 330px) !important;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: calc(var(--hm-inset-top, 0px) + 8px) 10px var(--hm-inset-bottom, 0px) !important;
+  background: var(--hm-surface) !important;
+  box-shadow: 12px 0 40px #0b0d121f;
+  z-index: 140;
+  animation: hm-slide-left .22s cubic-bezier(.2, .8, .2, 1);
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_toggle {
+  position: absolute !important;
+  right: 10px !important;
+  top: calc(var(--hm-inset-top, 0px) + 10px) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_newSession,
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_panelRow {
+  min-height: var(--hm-hit);
+  border-radius: 14px;
+  font-size: var(--hm-body);
+  gap: 12px;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_panelGlyph svg {
+  width: 22px;
+  height: 22px;
+}
+html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed) .wtg9ga_regionArea {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+html[data-harness-android] #harness-drawer-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 135;
+  background: #0b0d1226;
+  animation: hm-fade .18s ease-out;
+}
+html[data-harness-android] body:has(.wtg9ga_root:not(.wtg9ga_collapsed)) #harness-drawer-backdrop {
+  display: block;
+}
+
+/* -------------------------------------------------------- top controls --- */
+html[data-harness-android] .an3WzG_header {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+html[data-harness-android] .an3WzG_header:not(.an3WzG_headerBlank) {
+  position: fixed;
+  left: calc(var(--hm-gutter) + var(--hm-hit) + 8px);
+  right: calc(var(--hm-gutter) + 2 * var(--hm-hit) + 16px);
+  top: calc(var(--hm-inset-top, 0px) + 10px);
+  height: var(--hm-hit);
+  z-index: 90;
+  background: transparent;
+}
+#harness-mobile-actions {
+  position: fixed;
+  top: calc(var(--hm-inset-top, 0px) + 10px);
+  right: var(--hm-gutter);
+  height: var(--hm-hit);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 5px;
+  border: var(--hm-hairline);
+  border-radius: calc(var(--hm-hit) / 2);
+  background: var(--hm-surface);
+  box-shadow: 0 1px 3px #0b0d120f;
+  z-index: 100;
+  transition: opacity .16s ease, transform .16s ease;
+}
+#harness-mobile-actions > button {
+  width: calc(var(--hm-hit) - 10px);
+  height: calc(var(--hm-hit) - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--hm-ink);
+  transition: background .16s ease, transform .16s ease;
+}
+#harness-mobile-actions > button:active {
+  transform: scale(.92);
+  background: #0000000a;
+}
+#harness-mobile-actions svg {
+  width: 22px;
+  height: 22px;
+}
+#harness-mobile-actions[hidden] {
+  display: none;
+}
+html[data-harness-android] body:has(.pI_x6G_frame[data-rightbar-fullscreen]) #harness-mobile-actions {
+  opacity: 0;
+  pointer-events: none;
+}
+#harness-mobile-tools-close {
+  position: fixed;
+  top: calc(var(--hm-inset-top, 0px) + 10px);
+  right: var(--hm-gutter);
+  width: var(--hm-hit);
+  height: var(--hm-hit);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: var(--hm-hairline);
+  border-radius: 50%;
+  background: var(--hm-surface);
+  color: var(--hm-ink);
+  box-shadow: 0 2px 10px #0b0d1214;
+  z-index: 200;
+  animation: hm-fade .16s ease-out;
+  transition: transform .16s ease;
+}
+#harness-mobile-tools-close:active {
+  transform: scale(.92);
+}
+#harness-mobile-tools-close svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* --------------------------------------------------------- welcome hero --- */
+html[data-harness-android] .an3WzG_scrollBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 !important;
+}
+html[data-harness-android] .an3WzG_composerSeat {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+html[data-harness-android] .an3WzG_composerStack,
+html[data-harness-android] .an3WzG_composerHero {
+  flex: 1 1 auto;
+  min-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0 !important;
+  padding: 0 var(--hm-gutter) !important;
+}
+html[data-harness-android] .WOwLGG_root {
+  flex: 0 0 auto !important;
+  margin-top: 15vh;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+html[data-harness-android] .WOwLGG_stack {
+  width: 100%;
+  align-items: center;
+  gap: 0 !important;
+}
+html[data-harness-android] .WOwLGG_headline {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px !important;
+  width: 100%;
+  font-size: var(--hm-title) !important;
+  line-height: 30px !important;
+  font-weight: 500;
+  text-align: center;
+}
+html[data-harness-android] .WOwLGG_fish {
+  width: 54px !important;
+  height: auto !important;
+  color: var(--hm-brand) !important;
+  fill: var(--hm-brand) !important;
+}
+html[data-harness-android] .WOwLGG_fish path {
+  fill: var(--hm-brand) !important;
+}
+html[data-harness-android] .WOwLGG_titleGroup {
+  justify-content: center;
+  gap: 0 !important;
+}
+html[data-harness-android] .WOwLGG_previewBadge {
+  display: none !important;
+}
+
+/* --------------------------------------------- workspace / mode controls --- */
+html[data-harness-android] .an3WzG_heroWorkspaceRow {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px !important;
+  margin-top: auto;
+  padding: 0 0 10px !important;
+}
+html[data-harness-android] .WOwLGG_workspace,
+html[data-harness-android] .m2hUqa_seat {
+  min-height: var(--hm-hit) !important;
+  height: var(--hm-hit) !important;
+  padding: 0 8px 0 4px !important;
+  gap: 10px !important;
+  border-radius: 12px;
+  font-size: 17px !important;
+  line-height: 24px !important;
+  color: var(--hm-ink);
+  transition: background .16s ease;
+}
+html[data-harness-android] .WOwLGG_workspace:active,
+html[data-harness-android] .m2hUqa_seat:active {
+  background: #0000000a;
+}
+html[data-harness-android] .WOwLGG_workspace svg,
+html[data-harness-android] .m2hUqa_seat svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+html[data-harness-android] .WOwLGG_workspace > svg:last-child,
+html[data-harness-android] .m2hUqa_seat > svg:last-child {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+
+/* ------------------------------------------------------- composer card --- */
+html[data-harness-android] .GRgSLq_root,
+html[data-harness-android] .GRgSLq_hero {
+  width: 100%;
+  padding: 0 !important;
+}
+html[data-harness-android] .GRgSLq_card {
+  min-height: 118px;
+  box-sizing: border-box;
+  padding: 10px 8px 8px !important;
+  gap: 4px !important;
+  border: var(--hm-hairline) !important;
+  border-radius: var(--hm-radius) !important;
+  background: var(--hm-surface) !important;
+  box-shadow: 0 8px 24px #0b0d1208 !important;
+}
+html[data-harness-android] [data-composer-input] {
+  min-height: 44px;
+  padding: 8px 12px 0 !important;
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+}
+html[data-harness-android] .GRgSLq_placeholder {
+  top: 8px !important;
+  left: 12px !important;
+  right: 12px !important;
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+  color: var(--hm-ink-2);
+}
+html[data-harness-android] .GRgSLq_row {
+  align-items: center;
+  gap: 6px !important;
+  padding: 0 2px !important;
+}
+html[data-harness-android] .GRgSLq_add,
+html[data-harness-android] .GRgSLq_primary {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  flex: none;
+  transition: transform .16s ease, background .16s ease;
+}
+html[data-harness-android] .GRgSLq_add:active,
+html[data-harness-android] .GRgSLq_primary:active {
+  transform: scale(.92);
+}
+html[data-harness-android] .GRgSLq_add svg,
+html[data-harness-android] .GRgSLq_primary svg {
+  width: 22px;
+  height: 22px;
+}
+html[data-harness-android] ._86kJGG_trigger,
+html[data-harness-android] ._9r0rkG_trigger {
+  min-height: 44px;
+  gap: 6px;
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+}
+html[data-harness-android] ._86kJGG_trigger svg,
+html[data-harness-android] ._9r0rkG_trigger svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* --------------------------------------------------- attachment sheet --- */
+#harness-attach-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 320;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#harness-attach-sheet[hidden] {
+  display: none;
+}
+#harness-attach-sheet .hm-sheet-scrim {
+  position: absolute;
+  inset: 0;
+  background: #0b0d1233;
+  animation: hm-fade .18s ease-out;
+}
+#harness-attach-sheet .hm-sheet {
+  position: relative;
+  margin: 0 auto calc(var(--hm-inset-bottom, 0px) + 10px);
+  width: min(420px, calc(100vw - 2 * var(--hm-gutter)));
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 24px;
+  background: var(--hm-surface);
+  box-shadow: 0 -4px 36px #0b0d121f;
+  animation: hm-sheet-in .22s cubic-bezier(.2, .8, .2, 1);
+}
+#harness-attach-sheet .hm-sheet > button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 56px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: var(--hm-ink);
+  font-size: var(--hm-body);
+  line-height: 22px;
+  text-align: left;
+  transition: background .16s ease;
+}
+#harness-attach-sheet .hm-sheet > button:active {
+  background: #0000000a;
+}
+#harness-attach-sheet .hm-sheet > button .hm-ico {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #00000008;
+}
+#harness-attach-sheet .hm-sheet > button .hm-ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ------------------------------------------------------------- settings --- */
+html[data-harness-android] .VOzbGW_overlay {
+  padding: 0 !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+}
+html[data-harness-android] .VOzbGW_panel {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-sizing: border-box;
+  padding-top: var(--hm-inset-top, 0px);
+  padding-bottom: var(--hm-inset-bottom, 0px);
+  animation: hm-pop-large .2s cubic-bezier(.2, .8, .2, 1);
+}
+html[data-harness-android] .VOzbGW_nav {
+  flex: none;
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 6px 0 8px 12px !important;
+  gap: 6px !important;
+  border-bottom: var(--hm-hairline);
+}
+html[data-harness-android] .VOzbGW_navTitle {
+  height: 40px !important;
+  padding: 0 56px 0 4px !important;
+  display: flex !important;
+  align-items: center;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+html[data-harness-android] .VOzbGW_navList {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 6px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 0 56px 2px 0 !important;
+  scroll-padding-right: 56px;
+  scrollbar-width: none;
+}
+html[data-harness-android] .VOzbGW_navList::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+html[data-harness-android] .VOzbGW_navCell {
+  flex: 0 0 auto !important;
+  height: 44px !important;
+  padding: 0 14px !important;
+  gap: 8px !important;
+  border-radius: 12px !important;
+  font-size: var(--hm-body) !important;
+  white-space: nowrap;
+}
+html[data-harness-android] .VOzbGW_content {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  width: 100% !important;
+}
+html[data-harness-android] .VOzbGW_header {
+  position: absolute !important;
+  top: calc(var(--hm-inset-top, 0px) + 6px) !important;
+  right: 8px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+html[data-harness-android] .VOzbGW_header button:not(.VOzbGW_close) {
+  display: none !important;
+}
+html[data-harness-android] .VOzbGW_close {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border-radius: 50%;
+}
+html[data-harness-android] .VOzbGW_options {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  padding: 4px 20px calc(28px + var(--hm-inset-bottom, 0px)) !important;
+  font-size: var(--hm-body) !important;
+  line-height: 1.6;
+}
+html[data-harness-android] .VOzbGW_options [class$='_row'] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 16px 0 !important;
+  border-bottom: 1px solid var(--dsw-alias-border-l3, #f0f1f4);
+  box-sizing: border-box;
+}
+html[data-harness-android] .VOzbGW_options [class$='_row']:last-child {
+  border-bottom: 0;
+}
+html[data-harness-android] .VOzbGW_options [class$='_rowText'] {
+  min-width: 0;
+  flex: 1 1 180px;
+}
+html[data-harness-android] .VOzbGW_options button,
+html[data-harness-android] .VOzbGW_options [role=combobox] {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font-size: var(--hm-body);
+}
+html[data-harness-android] [class$='_rowTitle'],
+html[data-harness-android] [class$='_rowLabel'] {
+  font-size: var(--hm-body) !important;
+  line-height: 24px !important;
+}
+html[data-harness-android] [class$='_rowDescription'],
+html[data-harness-android] [class$='_rowDesc'] {
+  font-size: var(--hm-small) !important;
+  line-height: 21px !important;
+}
+html[data-harness-android] [role=menuitem],
+html[data-harness-android] [role=option] {
+  min-height: 44px;
+  box-sizing: border-box;
+  font-size: var(--hm-body);
+}
+
+/* ---------------------------------------------------------- transcripts --- */
+html[data-harness-android] .wSkVaW_root {
+  --dsh-content-font-size: 16px;
+  --dsh-code-font-size: 14px;
+  --dsh-terminal-font-size: 14px;
+}
+html[data-harness-android] input:not([type=checkbox]):not([type=radio]):not([type=range]),
+html[data-harness-android] textarea {
+  font-size: var(--hm-body);
+}
+
+/* ------------------------------------------------------------- motion --- */
+html[data-harness-android] [role=menu] {
+  animation: hm-pop .16s cubic-bezier(.2, .8, .2, 1);
+  transform-origin: 50% 100%;
+  max-height: min(60dvh, 460px);
+  overflow-y: auto;
+}
+html[data-harness-android] [role=dialog],
+html[data-harness-android] [role=listbox] {
+  animation: hm-fade .18s ease-out;
+}
+html[data-harness-android] .P3OORG_panel {
+  animation: hm-slide-right .22s cubic-bezier(.2, .8, .2, 1);
+}
+html[data-harness-android] .pI_x6G_sidebarCol {
+  transition: width .2s cubic-bezier(.2, .8, .2, 1);
+}
+@keyframes hm-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes hm-pop {
+  from { opacity: 0; transform: translateY(8px) scale(.97); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes hm-pop-large {
+  from { opacity: 0; transform: translateY(14px) scale(.99); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes hm-slide-left {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes hm-slide-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes hm-sheet-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-harness-android] [role=menu],
+  html[data-harness-android] [role=dialog],
+  html[data-harness-android] [role=listbox],
+  html[data-harness-android] .P3OORG_panel,
+  html[data-harness-android] .wtg9ga_root:not(.wtg9ga_collapsed),
+  #harness-attach-sheet .hm-sheet,
+  #harness-mobile-tools-close {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* --------------------------------------------------------- breakpoints --- */
+@media (min-width: 600px) {
+  html[data-harness-android] {
+    --hm-gutter: 24px;
+    --hm-body: 17px;
+    --hm-title: 26px;
+    --hm-hit: 52px;
+  }
+  html[data-harness-android] .an3WzG_body {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  html[data-harness-android] .VOzbGW_panel {
+    width: min(720px, 92vw) !important;
+    height: min(880px, 92dvh) !important;
+    margin: auto !important;
+    border-radius: 20px !important;
+    padding-top: 0;
+  }
+  html[data-harness-android] .VOzbGW_overlay {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 360px) {
+  html[data-harness-android] {
+    --hm-gutter: 12px;
+    --hm-title: 20px;
+  }
+  html[data-harness-android] .GRgSLq_card {
+    min-height: 108px;
+  }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  html[data-harness-android] .WOwLGG_root {
+    margin-top: 8vh;
+  }
+  html[data-harness-android] .GRgSLq_card {
+    min-height: 92px;
+  }
+}
+

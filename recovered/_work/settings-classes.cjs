@@ -1,0 +1,1 @@
+const fs=require('fs');const s=fs.readFileSync('work/settings-dom.html','utf8');console.log([...new Set([...s.matchAll(/class="([^"]+)"/g)].flatMap(x=>x[1].split(' ')))].filter(x=>x.startsWith('VOzbGW')||x.includes('row')||x.includes('Row')));console.log(s.slice(-16000).replace(/<svg[\s\S]*?<\/svg>/g,'[svg]').substring(0,10000));
