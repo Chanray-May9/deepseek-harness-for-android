@@ -350,9 +350,7 @@ tools/sync-shell.cjs
 | `RuntimeInstaller.java` | 运行环境解包、PRoot 启动参数、命令行环境初始化 |
 | `RuntimeService.java` | 引擎进程生命周期、日志、端口分配、启动地址解析 |
 
-仓库规模（提交历史与代码量）：
-
-[![仓库概况](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Chanray-May9&theme=default)](https://github.com/Chanray-May9/deepseek-harness-for-android)
+原生层三个文件加起来不到一千七百行，其余都是运行环境与前端资源。
 
 ## 常见问题
 
@@ -405,9 +403,11 @@ tools/sync-shell.cjs
 
 如果是界面改动，附一张改动前后的截图会省很多沟通。
 
-提交频率大致如下：
+下面两张是**我本人在 GitHub 上的活跃情况**，范围是整个账号，不是这一个仓库——用来让你知道这个项目还在不在维护。
 
-[![贡献热力图](https://ghchart.rshah.org/Chanray-May9)](https://github.com/Chanray-May9)
+[![GitHub 贡献热力图](https://ghchart.rshah.org/Chanray-May9)](https://github.com/Chanray-May9)
+
+[![GitHub 账号概况](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Chanray-May9&theme=default)](https://github.com/Chanray-May9)
 
 ## 致谢
 
@@ -416,3 +416,4 @@ tools/sync-shell.cjs
 如果这个项目对你有用，点个 Star 会让更多需要它的人看到：
 
 [![Star 增长](https://api.star-history.com/svg?repos=Chanray-May9/deepseek-harness-for-android&type=Date)](https://star-history.com/#Chanray-May9/deepseek-harness-for-android&Date)
+
