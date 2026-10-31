@@ -421,7 +421,7 @@ tools/sync-shell.cjs
 
 如果是界面改动，附一张改动前后的截图会省很多沟通。
 
-下面两张是**我本人在 GitHub 上的活跃情况**，范围是整个账号，不是这一个仓库——用来让你知道这个项目还在不在维护。
+下面是我本人 GitHub 账号的活跃度，能看出这个项目还在不在维护。
 
 [![GitHub 贡献热力图](https://ghchart.rshah.org/Chanray-May9)](https://github.com/Chanray-May9)
 
@@ -429,10 +429,21 @@ tools/sync-shell.cjs
 
 ## 致谢
 
-界面与运行时来自 DeepSeek Harness，本项目提供安卓端的运行环境与手机适配。
+这个项目站在一堆开源工作上。
+
+**DeepSeek Harness** —— 界面、后端、工具系统全部来自这里。本项目做的事情是把它的运行环境搬进安卓，并在外面套一层手机适配。
+
+**Node.js** —— 整个后端跑在它上面。glibc 版本的运行时被打包进 APK，才让 Harness 能在手机里执行。
+
+**Ubuntu** —— 精简的根文件系统提供了 glibc 与基础工具链，是内置终端能干活的前提。
+
+**Termux** —— 命令行环境的 bootstrap 与 PRoot 的构建都来自这个项目。没有它们，安卓上的 Linux 用户空间无从谈起。
+
+**PRoot** —— 用户态的 chroot。不需要 root 就能把任意目录当成 `/`，是整个方案能成立的关键一环。
+
+以及所有提交过 Issue、给过反馈的人。
 
 如果这个项目对你有用，点个 Star 会让更多需要它的人看到：
 
 [![Star 增长](https://api.star-history.com/svg?repos=Chanray-May9/deepseek-harness-for-android&type=Date)](https://star-history.com/#Chanray-May9/deepseek-harness-for-android&Date)
-
 
