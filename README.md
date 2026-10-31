@@ -12,6 +12,8 @@
 **在手机上直接运行完整的 DeepSeek Harness。** 不需要电脑，不需要服务器，不需要连任何外部地址。装好之后点图标就能用。
 
 
+**中文 · [English](docs/i18n/README.en.md) · [日本語](docs/i18n/README.ja.md) · [한국어](docs/i18n/README.ko.md) · [ไทย](docs/i18n/README.th.md) · [Português](docs/i18n/README.pt.md) · [Español](docs/i18n/README.es.md) · [Français](docs/i18n/README.fr.md)**
+
 ---
 
 ## 目录
